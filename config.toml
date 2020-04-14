@@ -1,0 +1,23 @@
+baseURL = "https://feminizidmap.org"
+languageCode = "en-us"
+theme = "feminicide-theme"
+
+DefaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "Feminizidmap.org"
+    weight = 1
+  [languages.de]
+    title = "Feminizidmap.org"
+    weight = 2
+    [languages.de.params.navigation]
+      project = "Das Project"
+      publications = "Veröffentlichungen"
+      data = "Daten"
+
+[params]
+  [params.navigation]
+    project = "The Project"
+    publications = "Publications"
+    data = "Data"

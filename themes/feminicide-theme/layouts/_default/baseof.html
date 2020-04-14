@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+      {{ end }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS }}
+    <link rel="stylesheet" href="{{$style.RelPermalink}}">
+
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  <body data-barba="wrapper">
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <div class="main-container" data-barba="container" data-barba-namespace="{{ .Slug }}-{{ .Lang }}">
+
+      {{ block "header" . }}
+      <header>
+        <nav>
+          <ul>
+            <li><a href="/">{{ .Site.Params.navigation.project }}</a></li>
+            <li><a href="#">{{ .Site.Params.navigation.publications }}</a></li>
+            <li><a href="#">{{ .Site.Params.navigation.data }}</a></li>
+          </ul>
+        </nav>
+
+        {{ $langList := (.Page.AllTranslations) }}
+        {{ $currentLang := .Language}}
+        {{ $lenLangList := len $langList}}
+        {{ range $index, $translation := $langList }}
+        {{ if eq $currentLang .Language}}
+        <span class="">{{ $translation.Language }}</span>
+        {{ else }}
+        <a href="{{ $translation.Permalink }}" class="language-switch">{{ $translation.Language }}</a>
+        {{ end }}
+
+        {{ if (eq $index 0) }}|{{ end }}
+
+        {{ if (eq $lenLangList 1)}}
+        <a href="{{ $translation.Permalink}}">en</a>
+        {{ end }}
+        {{ end }}
+      </header>
+      <hr>
+      {{ end }}
+
+
+      {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
+    </div>
+
+    {{ block "footer" . }}
+    <hr>
+    <footer>
+      <p>Feminizidmap.org 2020</p>
+    </footer>
+    {{ end }}
+
+    {{ $barba := resources.Get "js/barba.dist.min.js" }}
+    {{ $barba_css := resources.Get "js/barba-css.dist.min.js" }}
+    {{ $script := resources.Get "js/main.js" }}
+    {{ $out := slice $barba $barba_css $script | resources.Concat "js/bundle.js" }}
+    <script type="module" src="{{ $out.RelPermalink }}"></script>
+  </body>
+</html>
