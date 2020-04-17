@@ -6,9 +6,8 @@
   --unit-font-large: 1.4rem;
 }
 
-
 .fade-leave-active,
-.fade-once-active, 
+.fade-once-active,
 .fade-enter-active {
   transition: opacity var(--timing) var(--bezier), transform var(--timing) var(--bezier);
 }
@@ -24,7 +23,7 @@
   transform:  translate(0, 30px);
 }
 
-.fade-enter, 
+.fade-enter,
 .fade-once {
   opacity: 0;
   transform:  translate(0, 30px);

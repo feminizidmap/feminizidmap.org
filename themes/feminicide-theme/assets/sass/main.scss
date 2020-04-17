@@ -1,9 +1,18 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   flex-direction: column;
   height: 100vh;
   font-size: 19px;
   line-height: 1.5;
-  margin: 0 auto;
+  margin: 0;
   -webkit-font-smoothing:antialiased;
 }
 
@@ -49,7 +58,7 @@ body {
     a:hover {
       color: $color-accent;
     }
-  } 
+  }
 }
 
 

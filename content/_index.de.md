@@ -1,5 +1,5 @@
 ---
-title: Ein Rechercheprojekt zu Feminiziden in Deutschland
+title: Ein Recherche&shy;projekt zu Feminiziden in Deutschland
 slug: projekt
 ---
 

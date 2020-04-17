@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="{{ .Language }}">
   <head>
     <meta charset="utf-8">
     <title>{{ block "title" . }}
@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
 
     {{ $style := resources.Get "sass/site.scss" | resources.ToCSS }}
@@ -23,7 +23,9 @@
     {{ block "header" . }}
       <header>
         <div class="menu">
-          <a href="/"><img src="Feminizidmap-Logo.svg"></a>
+          <a href="/" title="Feminizidmap.org">
+            {{ readFile "/static/Feminizidmap-Logo.svg" | safeHTML }}
+          </a>
           <!--<nav>
             <ul>
               <li><a href="/">{{ .Site.Params.navigation.project }}</a></li>
@@ -51,12 +53,10 @@
             {{ end }}
           </div>
         </div>
-        <h1>{{ .Title }}</h1>
+        <h1>{{ .Title | safeHTML }}</h1>
       </header>
       {{ end }}
     <div class="main-container" data-barba="container" data-barba-namespace="{{ .Slug }}-{{ .Lang }}">
-
-
       {{ block "main" . }}
       <!-- The part of the page that begins to differ between templates -->
       {{ end }}
@@ -70,7 +70,7 @@
       </p>
     </footer>
     {{ end }}
-<!-- 
+<!--
     {{ $barba := resources.Get "js/barba.dist.min.js" }}
     {{ $barba_css := resources.Get "js/barba-css.dist.min.js" }}
     {{ $script := resources.Get "js/main.js" }}
