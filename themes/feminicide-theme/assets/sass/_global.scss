@@ -1,0 +1,61 @@
+:root {
+  --timing: 0.25s;
+  --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --unit-maxwidth-text: 35em;
+  --unit-line-height: 1.4em;
+  --unit-font-large: 1.4rem;
+}
+
+
+.fade-leave-active,
+.fade-once-active, 
+.fade-enter-active {
+  transition: opacity var(--timing) var(--bezier), transform var(--timing) var(--bezier);
+}
+
+
+.fade-leave {
+  opacity: 1;
+  transform:  translate(0, 0px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform:  translate(0, 30px);
+}
+
+.fade-enter, 
+.fade-once {
+  opacity: 0;
+  transform:  translate(0, 30px);
+}
+
+.fade-enter-to,
+.fade-once-to
+ {
+  opacity: 1;
+  transform:  translate(0, 0px);
+}
+
+
+
+@keyframes fadein{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+@-moz-keyframes fadein{
+  from{opacity:0}to{opacity:1}
+}
+
+@-webkit-keyframes fadein{
+  from{opacity:0}to{opacity:1}
+}
+
+@-ms-keyframes fadein{
+  from{opacity:0}to{opacity:1}
+}
+
+@-o-keyframes fadein{
+  from{opacity:0}to{opacity:1}
+}

@@ -11,46 +11,50 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
 
-    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS }}
+    {{ $style := resources.Get "sass/site.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{$style.RelPermalink}}">
 
     <meta name="theme-color" content="#fafafa">
   </head>
-  <body data-barba="wrapper">
+  <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-    <div class="main-container" data-barba="container" data-barba-namespace="{{ .Slug }}-{{ .Lang }}">
-
-      {{ block "header" . }}
+    {{ block "header" . }}
       <header>
-        <nav>
-          <ul>
-            <li><a href="/">{{ .Site.Params.navigation.project }}</a></li>
-            <li><a href="#">{{ .Site.Params.navigation.publications }}</a></li>
-            <li><a href="#">{{ .Site.Params.navigation.data }}</a></li>
-          </ul>
-        </nav>
+        <div class="menu">
+          <a href="/"><img src="Feminizidmap-Logo.svg"></a>
+          <!--<nav>
+            <ul>
+              <li><a href="/">{{ .Site.Params.navigation.project }}</a></li>
+              <li><a href="#">{{ .Site.Params.navigation.publications }}</a></li>
+              <li><a href="#">{{ .Site.Params.navigation.data }}</a></li>
+            </ul>
+          </nav>
+          -->
+          <div class="language">
+            {{ $langList := (.Page.AllTranslations) }}
+            {{ $currentLang := .Language}}
+            {{ $lenLangList := len $langList}}
+            {{ range $index, $translation := $langList }}
+            {{ if eq $currentLang .Language}}
+            <span class="">{{ $translation.Language }}</span>
+            {{ else }}
+            <a href="{{ $translation.Permalink }}" class="language-switch">{{ $translation.Language }}</a>
+            {{ end }}
 
-        {{ $langList := (.Page.AllTranslations) }}
-        {{ $currentLang := .Language}}
-        {{ $lenLangList := len $langList}}
-        {{ range $index, $translation := $langList }}
-        {{ if eq $currentLang .Language}}
-        <span class="">{{ $translation.Language }}</span>
-        {{ else }}
-        <a href="{{ $translation.Permalink }}" class="language-switch">{{ $translation.Language }}</a>
-        {{ end }}
+            {{ if (eq $index 0) }}|{{ end }}
 
-        {{ if (eq $index 0) }}|{{ end }}
-
-        {{ if (eq $lenLangList 1)}}
-        <a href="{{ $translation.Permalink}}">en</a>
-        {{ end }}
-        {{ end }}
+            {{ if (eq $lenLangList 1)}}
+            <a href="{{ $translation.Permalink}}">en</a>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+        <h1>{{ .Title }}</h1>
       </header>
-      <hr>
       {{ end }}
+    <div class="main-container" data-barba="container" data-barba-namespace="{{ .Slug }}-{{ .Lang }}">
 
 
       {{ block "main" . }}
@@ -59,16 +63,18 @@
     </div>
 
     {{ block "footer" . }}
-    <hr>
     <footer>
-      <p>Feminizidmap.org 2020</p>
+      <p>If you want to contribute to the documentation by reporting a case, you can report it to our email <a href="&#0109;&#097;&#0105;&#0108;&#0116;&#0111;&#058;&#0102;&#0101;&#0109;&#0105;&#0110;&#0105;&#0122;&#0105;&#0100;&#097;&#0108;&#0101;&#0114;&#0116;&#0115;&#064;&#0119;&#0101;&#098;&#046;&#0100;&#0101;">&#0102;&#0101;&#0109;&#0105;&#0110;&#0105;&#0122;&#0105;&#0100;&#097;&#0108;&#0101;&#0114;&#0116;&#0115;&#064;&#0119;&#0101;&#098;&#046;&#0100;&#0101;</a><br><br>
+      If you think that you can and want to collaborate, or, if you want to network with us, or for any other purposes, you can contact us to our email <a href="&#0109;&#097;&#0105;&#0108;&#0116;&#0111;&#058;&#0102;&#0101;&#0109;&#0105;&#0110;&#0105;&#0122;&#0105;&#0100;&#0109;&#097;&#0112;&#064;&#0112;&#0114;&#0111;&#0116;&#0111;&#0110;&#0109;&#097;&#0105;&#0108;&#046;&#099;&#0111;&#0109;">&#0102;&#0101;&#0109;&#0105;&#0110;&#0105;&#0122;&#0105;&#0100;&#0109;&#097;&#0112;&#064;&#0112;&#0114;&#0111;&#0116;&#0111;&#0110;&#0109;&#097;&#0105;&#0108;&#046;&#099;&#0111;&#0109;</a><br><br>
+      <a href="/">Imprint</a>
+      </p>
     </footer>
     {{ end }}
-
+<!-- 
     {{ $barba := resources.Get "js/barba.dist.min.js" }}
     {{ $barba_css := resources.Get "js/barba-css.dist.min.js" }}
     {{ $script := resources.Get "js/main.js" }}
     {{ $out := slice $barba $barba_css $script | resources.Concat "js/bundle.js" }}
-    <script type="module" src="{{ $out.RelPermalink }}"></script>
+    <script type="module" src="{{ $out.RelPermalink }}"></script> -->
   </body>
 </html>

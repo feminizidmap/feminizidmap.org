@@ -1,11 +1,81 @@
 body {
-  display: flex;
   flex-direction: column;
   height: 100vh;
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 auto;
+  -webkit-font-smoothing:antialiased;
 }
-.main-container {
-  flex: 1;
-  background-color: aquamarine;
+
+
+@media screen and (min-width: 320px){
+
+.intro{
+    max-width: 50rem;
+    margin: 3rem 1rem 3rem 1rem;
+
+    h3 {
+      font-family: $font-serif;
+      font-weight: normal;
+      font-size: 1.85rem;
+      line-height: 1.25;
+    }
+  }
+
+  main {
+    flex: 1;
+    font-family: $font-serif;
+    color: $color-dark;
+    margin: 2rem 1rem 6rem 1rem;
+
+    h1, h2, h3, h4 {
+      font-family: $font-sans;
+      font-weight: normal;
+      color: $color-accent;
+    }
+
+    h2 {
+      font-size: 3rem;
+      line-height: 1.15;
+      margin: 3.5rem 0 1.5rem 0;
+    }
+
+    a, a:visited {
+    color: $color-dark;
+    text-decoration: none;
+    transition: all color 0.2s ease;
+    }
+
+    a:hover {
+      color: $color-accent;
+    }
+  } 
+}
+
+
+@media screen and (min-width: 1024px){
+
+  .intro{
+    max-width: 46rem;
+    margin: 5rem 0 3rem 14rem;
+
+    h3 {
+      font-size: 2.25rem;
+      line-height: 1.2;
+    }
+  }
+
+  main {
+    max-width: 38rem;
+    margin: 0 0 8rem 14rem;
+
+
+    h2 {
+      font-size: 3.3rem;
+      line-height: 1.15;
+      margin: 5rem 0 2rem 0;
+    }
+  }
 }
 
 

@@ -1,0 +1,40 @@
+@media screen and (min-width: 320px){
+  footer{
+    padding: 1rem;
+    background-image: url("/bg-gradient-02.webp");
+    background-position: 50% 50%;
+    background-size: cover;
+    font-family: $font-sans;
+    letter-spacing: 0;
+
+    p{
+      font-size: 22px;
+      line-height: 1.25em;
+    }
+
+    a, a:active, a:visited {
+      border-bottom: 2px solid transparent;
+      color: white;
+      text-decoration: none;
+    }
+
+    a:focus, a:hover, a:active:focus, a:active:hover, a:visited:focus, a:visited:hover {
+      border-bottom: 2px solid;
+      border-color: white;
+      transition: all ease .3s;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px){
+  footer{
+    padding: 6rem 14rem;
+
+    p{
+      max-width: 45rem;
+      font-size: 34px;
+      line-height: 1.3em;
+    }
+  }
+}
