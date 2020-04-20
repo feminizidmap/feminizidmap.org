@@ -38,12 +38,12 @@ const fromCache = request => {
 const update = request => {
   return caches.open(CACHE_NAME)
     .then(cache => fetch(request)
-          .then(response => cache.put(request, response.clone())
-                .then(() => response))
           .catch(error => {
             console.log('[onfetch] Failed, serving fallback ' + error)
             return caches.open(CACHE_NAME).then(cache => cache.match('/offline/'))
-          }))
+          })
+          .then(response => cache.put(request, response.clone())
+                .then(() => response)))
 }
 
 const refresh = response => {
