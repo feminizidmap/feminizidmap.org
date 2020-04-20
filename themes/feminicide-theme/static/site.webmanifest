@@ -1,12 +1,13 @@
 {
   "short_name": "feminizidmap",
-  "name": "",
+  "name": "Feminizidmap.org",
+  "display": "minimal-ui",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "background_color": "#63125E",
+  "theme_color": "#63125E"
 }

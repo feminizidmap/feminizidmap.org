@@ -14,7 +14,7 @@
     {{ $style := resources.Get "sass/site.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{$style.RelPermalink}}">
 
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#63125E">
   </head>
   <body>
     <!--[if IE]>
@@ -24,7 +24,7 @@
       <header>
         <div class="menu">
           <a href="/" title="Feminizidmap.org">
-            {{ readFile "/static/Feminizidmap-Logo.svg" | safeHTML }}
+            {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo.svg" | safeHTML }}
           </a>
           <!--<nav>
             <ul>
@@ -70,11 +70,13 @@
       </p>
     </footer>
     {{ end }}
-<!--
+
     {{ $barba := resources.Get "js/barba.dist.min.js" }}
     {{ $barba_css := resources.Get "js/barba-css.dist.min.js" }}
+    {{ $vendor := slice $barba $barba_css | resources.Concat "js/vendor.js" }}
+    <script type="text/javascript" src="{{ $vendor.RelPermalink }}"></script>
+
     {{ $script := resources.Get "js/main.js" }}
-    {{ $out := slice $barba $barba_css $script | resources.Concat "js/bundle.js" }}
-    <script type="module" src="{{ $out.RelPermalink }}"></script> -->
+    <script  type="text/javascript" src="{{ $script.RelPermalink }}"></script>
   </body>
 </html>
