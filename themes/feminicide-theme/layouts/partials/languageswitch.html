@@ -1,0 +1,10 @@
+<div class="language-switch">
+  {{ $langList := (.Page.AllTranslations) }}
+  {{ $currentLang := .Language}}
+  {{ $lenLangList := len $langList}}
+  {{ range $index, $translation := $langList }}
+  {{ if ne $currentLang .Language}}
+  <a href="{{ $translation.Permalink }}" class="is-active">{{ $translation.Language.LanguageName }}</a>
+  {{ end }}
+  {{ end }}
+</div>

@@ -3,9 +3,14 @@
   "name": "Feminizidmap.org",
   "display": "minimal-ui",
   "icons": [{
-    "src": "icon.png",
+    "src": "Logo_192.png",
     "type": "image/png",
     "sizes": "192x192"
+  },
+  {
+    "src": "Logo_512.png",
+    "type": "image/png",
+    "sizes": "512x512"
   }],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#63125E",

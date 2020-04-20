@@ -1,34 +1,40 @@
-@media screen and (min-width: 320px){
-  footer{
-    padding: 1rem;
-    background-image: url("/bg-gradient-02.webp");
-    background-position: 50% 50%;
-    background-size: cover;
-    font-family: $font-sans;
-    letter-spacing: 0;
+.footer {
+  padding: 1rem;
+  background: rgb(99,18,94);
+  background: linear-gradient(333deg, rgba(99,18,94,1) 22%, rgba(198,121,250,1) 100%);
+  background-position: 50% 50%;
+  background-size: cover;
+  font-family: $font-sans;
+  letter-spacing: 0;
 
-    p{
-      font-size: 22px;
-      line-height: 1.25em;
-    }
+  p {
+    font-size: 22px;
+    line-height: 1.25em;
+  }
 
-    a, a:active, a:visited {
-      border-bottom: 2px solid transparent;
-      color: white;
-      text-decoration: none;
-    }
+  a, a:active, a:visited {
+    border-bottom: 2px solid transparent;
+    color: white;
+    text-decoration: none;
+  }
 
-    a:focus, a:hover, a:active:focus, a:active:hover, a:visited:focus, a:visited:hover {
-      border-bottom: 2px solid;
-      border-color: white;
-      transition: all ease .3s;
-    }
+  a:focus, a:hover, a:active:focus, a:active:hover, a:visited:focus, a:visited:hover {
+    border-bottom: 2px solid;
+    border-color: white;
+    transition: all ease .3s;
   }
 }
 
+.no-webp .footer {
+  background-image: url("/Femnizid-Background-Gradient-3.png");
+}
 
-@media screen and (min-width: 1024px){
-  footer{
+.has-webp .footer {
+  background-image: url("/bg-gradient-02.webp");
+}
+
+@media screen and (min-width: 1024px) {
+  .footer{
     padding: 6rem 14rem;
 
     p{
