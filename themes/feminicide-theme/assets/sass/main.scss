@@ -34,13 +34,13 @@ body {
   main {
     flex: 1;
     font-family: $font-serif;
-    color: $color-dark;
+    color: $grey-dark;
     margin: 2rem 1rem 6rem 1rem;
 
     h1, h2, h3, h4 {
       font-family: $font-sans;
       font-weight: normal;
-      color: $color-accent;
+      color: $neon-purple;
     }
 
     h2 {
@@ -50,13 +50,13 @@ body {
     }
 
     a, a:visited {
-    color: $color-dark;
+    color: $grey-dark;
     text-decoration: none;
     transition: all color 0.2s ease;
     }
 
     a:hover {
-      color: $color-accent;
+      color: $neon-purple;
     }
   }
 }
