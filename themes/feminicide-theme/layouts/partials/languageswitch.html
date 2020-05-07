@@ -1,10 +1,12 @@
-<div class="language-switch">
+<div class="c-language-switch">
+  <div class="rotation-helper">
   {{ $langList := (.Page.AllTranslations) }}
   {{ $currentLang := .Language}}
   {{ $lenLangList := len $langList}}
   {{ range $index, $translation := $langList }}
   {{ if ne $currentLang .Language}}
-  <a href="{{ $translation.Permalink }}" class="is-active">{{ $translation.Language.LanguageName }}</a>
+  <a href="{{ $translation.Permalink }}" class="is-active">{{ $translation.Language.LanguageName }} Version</a>
   {{ end }}
   {{ end }}
+  </div>
 </div>

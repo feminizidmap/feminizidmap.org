@@ -11,15 +11,19 @@ DefaultContentLanguage = "en"
     weight = 1
   [languages.de]
     title = "Feminizidmap.org"
-    languageName = "Deutsch"
+    languageName = "Deutsche"
     weight = 2
     [languages.de.params.navigation]
-      project = "Das Project"
-      publications = "Veröffentlichungen"
-      data = "Daten"
+      about = "Über das Projekt"
+      researchers = "Forscher:innen"
+      faq = "FAQ"
+    [languages.de.params.secondary]
+      imprint = "Impressum"
 
 [params]
   [params.navigation]
-    project = "The Project"
-    publications = "Publications"
-    data = "Data"
+    about = "About the Project"
+    researchers = "Researchers"
+    faq = "FAQ"
+  [params.secondary]
+    imprint = "Imprint"

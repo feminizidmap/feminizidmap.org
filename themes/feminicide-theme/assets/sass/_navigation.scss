@@ -1,0 +1,76 @@
+.l-navigation__open {
+  width: 0;
+  overflow: hidden;
+  transition: width 250ms ease-in-out, padding 250ms ease-in-out;
+  &.is-active {
+    padding-left: 2rem;
+    width: 24rem;
+    max-width: 80vw;
+  }
+  .c-menu {
+    margin-top: 5rem;
+    white-space: nowrap;
+  }
+}
+
+.l-navigation__close {
+  flex: 0 0 1rem;
+  display: flex;
+  padding: 0 2rem 0 1rem;
+  flex-direction : column;
+
+  .c-language-switch {
+    position: relative;
+    flex-basis: 45vh;
+    .rotation-helper {
+      position: absolute;
+      top: 8rem;
+      z-index: 90;
+      display: block;
+      left: 1.2em;
+      transform-origin: left bottom;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+
+@mixin link-style {
+  font-family: $font-sans;
+  a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    &:hover,
+    &:active {
+      border-color: $neon-purple;
+    }
+  }
+}
+
+
+.c-menu {
+  @include link-style;
+  padding: 0;
+  list-style: none;
+  font-size: 2rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.c-toggle {
+  padding: 0;
+  background: none;
+  border: none;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+.c-language-switch {
+  @include link-style;
+  font-size: 1rem;
+  white-space: nowrap;
+}
