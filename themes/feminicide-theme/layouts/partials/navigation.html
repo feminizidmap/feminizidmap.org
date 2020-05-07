@@ -1,0 +1,23 @@
+<nav class="bg-black font-white l-navigation" role="navigation">
+  <div class="l-navigation__close">
+    {{ partial "languageswitch.html" . }}
+
+    <button id="toggle" aria-expanded="false" aria-controls="menu" class="c-toggle">
+      <span class="sr-only">Menu</span>
+      <span>B</span>
+    </button>
+  </div>
+  <div class="l-navigation__open" id="menu">
+    <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" class="c-logo">{{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo.svg" | safeHTML }}</a>
+
+    <ul class="c-menu">
+      {{ $site := .Site }}
+      {{ range $key, $val := .Site.Params.navigation }}
+      <li><a href="{{$site.BaseURL}}{{$key}}">{{$val}}</a></li>
+      {{ end }}
+      {{ range $key, $val := .Site.Params.secondary }}
+      <li><a href="{{$site.BaseURL}}{{$key}}">{{$val}}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>

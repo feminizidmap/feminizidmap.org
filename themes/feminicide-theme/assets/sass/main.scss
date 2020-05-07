@@ -12,24 +12,9 @@ body {
   font-size: 19px;
   line-height: 1.5;
   margin: 0;
-  -webkit-font-smoothing:antialiased;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-/*
-.switch-language-leave-active,
-.switch-language-enter-active {
-  transition: opacity 450ms ease, transform 650ms ease-in-out;
-}
 
-.switch-language-leave,
-.switch-language-enter-to {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.switch-language-enter,
-.switch-language-leave-to {
-  opacity: 0;
-  transform: translateX(100%);
-}
-*/
+// resets ??

@@ -52,35 +52,16 @@
     <a href="#content" title="Skip to content" class="show-on-focus bg-purple font-white">Skip to content</a>
     <div class="l-wrapper" data-barba="wrapper">
     {{ block "header" . }}
-      <nav class="bg-black font-white l-navigation" role="navigation">
-        <div class="l-navigation__close">
-          {{ partial "languageswitch.html" . }}
-
-          <button id="toggle" aria-expanded="false" aria-controls="menu" class="c-toggle">
-            <span class="sr-only">Menu</span>
-            <span>B</span>
-          </button>
-        </div>
-        <div class="l-navigation__open" id="menu">
-          <a href="/" title="Feminizidmap.org" class="c-logo">{{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo.svg" | safeHTML }}</a>
-
-          <ul class="c-menu">
-            {{ $site := .Site }}
-            {{ range $key, $val := .Site.Params.navigation }}
-            <li><a href="{{$site.BaseURL}}{{$key}}">{{$val}}</a></li>
-            {{ end }}
-            {{ range $key, $val := .Site.Params.secondary }}
-            <li><a href="{{$site.BaseURL}}{{$key}}">{{$val}}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-      </nav>
+      {{ partial "navigation.html" . }}
     {{ end }}
-      <div class="main-container l-page" data-barba="container" data-barba-namespace="{{ .Slug }}-{{ .Lang }}">
+      <div class="l-page" data-barba="container" data-barba-namespace="{{ .Slug }}-{{ .Lang }}">
         <header class="page-header">
-          <div class="page-logo"><a href="/" title="Feminizidmap.org">{{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}</a></div>
-
-          <div class="page-title"><h1>{{ .Page.Slug }}</h1></div>
+          <div class="page-logo">
+            <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
+              {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
+            </a>
+          </div>
+          <div class="page-title">{{ .Page.Slug }}</div>
         </header>
         {{ block "main" . }}{{ end }}
 

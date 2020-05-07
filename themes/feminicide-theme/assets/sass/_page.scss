@@ -1,0 +1,21 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-sans;
+  margin: 2rem 1rem 6rem 1rem;
+  @media screen and (min-width: $break-l) {
+    margin: 3rem 2rem 8rem 14rem;
+  }
+}
+
+.page-logo {
+  .is-hidden {
+    display: none;
+  }
+}
+
+.page-title {
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: capitalize;
+}

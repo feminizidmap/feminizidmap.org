@@ -4,10 +4,14 @@ $bright-pruple: #F5E6FF;
 $neon-purple: #9F00FF;
 $dark-purple: #63125E;
 
-
-
-//Typography
+// Typography
 $font-sans:  'Stabil',  -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 $font-serif: 'Blanco-Regular', Georgia, serif;
 $font-letterspacing: 0.02em;
 $font-size-small: 80%;
+
+
+// Breakpoints
+$break-s: 320px;
+$break-m: 560px;
+$break-l: 1024px;

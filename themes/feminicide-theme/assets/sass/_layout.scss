@@ -2,35 +2,61 @@
   display: flex;
 }
 
-
-.l-page {
-
-}
-
 .l-navigation {
+//  position: sticky;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 3rem 0rem 3rem 0rem;
 }
 
-.main-container {
-
+.l-page {
+  width: 100%;
+  main {
+    font-family: $font-serif;
+    color: $grey-dark;
+    margin: 2rem 1rem 6rem 1rem;
+    @media screen and (min-width: $break-l) {
+      max-width: 38rem;
+      margin: 0 0 8rem 14rem;
+    }
+    h1, h2, h3, h4 {
+      font-family: $font-sans;
+      font-weight: normal;
+      line-height: 1.15;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 1.7rem 0;
+      @media screen and (min-width: $break-l) {
+        font-size: 3.9rem;
+        margin: 0 0 2.5rem 0;
+      }
+    }
+    h2 {
+      font-size: 3rem;
+      margin: 3.5rem 0 1.5rem 0;
+      @media screen and (min-width: $break-l) {
+        font-size: 3.3rem;
+        margin: 5rem 0 2rem 0;
+      }
+    }
+    h3, h4 {
+      color: $neon-purple;
+    }
+    a, a:visited {
+      color: $grey-dark;
+      text-decoration: none;
+      transition: all color 0.2s ease;
+    }
+    a:hover {
+      color: $neon-purple;
+    }
+  }
 }
 
-.bg-black {
-  background-color: black;
-}
-.bg-purple {
-  background-color: $neon-purple;
-}
 
-.font-white {
-  color: white;
-}
-
-
-@media screen and (min-width: 320px){
+@media screen and (min-width: $break-s){
 
 .intro{
     max-width: 50rem;
@@ -43,40 +69,10 @@
       line-height: 1.25;
     }
   }
-
-  main {
-    flex: 1;
-    font-family: $font-serif;
-    color: $grey-dark;
-    margin: 2rem 1rem 6rem 1rem;
-
-    h1, h2, h3, h4 {
-      font-family: $font-sans;
-      font-weight: normal;
-      color: $neon-purple;
-    }
-
-    h2 {
-      font-size: 3rem;
-      line-height: 1.15;
-      margin: 3.5rem 0 1.5rem 0;
-    }
-
-    a, a:visited {
-    color: $grey-dark;
-    text-decoration: none;
-    transition: all color 0.2s ease;
-    }
-
-    a:hover {
-      color: $neon-purple;
-    }
-  }
 }
 
 
-@media screen and (min-width: 1024px){
-
+@media screen and (min-width: $break-l){
   .intro{
     max-width: 46rem;
     margin: 5rem 0 3rem 14rem;
@@ -84,18 +80,6 @@
     h3 {
       font-size: 2.25rem;
       line-height: 1.2;
-    }
-  }
-
-  main {
-    max-width: 38rem;
-    margin: 0 0 8rem 14rem;
-
-
-    h2 {
-      font-size: 3.3rem;
-      line-height: 1.15;
-      margin: 5rem 0 2rem 0;
     }
   }
 }
