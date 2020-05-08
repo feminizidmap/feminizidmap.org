@@ -1,17 +1,11 @@
+{{ define "main" }}
 <header class="header">
-  <div class="menu">
-    <a href="/" title="Feminizidmap.org">
+  <div class="page-logo">
+    <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
       {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo.svg" | safeHTML }}
     </a>
-    {{ partial "languageswitch.html" . }}
   </div>
-  <h1>{{ .Title | safeHTML }}</h1>
 </header>
-
-{{ define "main" }}
-<div class="intro">
-  <h3>{{ .Description }}</h3>
-</div>
 <main>
   {{ .Content }}
 </main>
