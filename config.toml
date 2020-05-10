@@ -14,7 +14,7 @@ DefaultContentLanguage = "en"
     languageName = "Deutsche"
     weight = 2
     [languages.de.params.navigation]
-      about = "Über das Projekt"
+      about = "Über"
       researchers = "Forscher:innen"
       faq = "FAQ"
     [languages.de.params.secondary]
@@ -22,7 +22,7 @@ DefaultContentLanguage = "en"
 
 [params]
   [params.navigation]
-    about = "About the Project"
+    about = "About"
     researchers = "Researchers"
     faq = "FAQ"
   [params.secondary]

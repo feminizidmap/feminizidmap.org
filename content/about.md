@@ -1,5 +1,5 @@
 ---
-title: About the project
+title: About 
 slug: about
 description: What is Feminizidmap.org about?
 ---
