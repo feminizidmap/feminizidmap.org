@@ -1,17 +1,36 @@
-.l-wrapper {
-  display: flex;
-}
+$nav-width: 28rem;
+$nav-preview: 3rem;
+
+.l-wrapper {}
 
 .l-navigation {
-//  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $nav-width;
+  height: 100vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 3rem 0rem 3rem 3rem;
+  transition: transform 250ms ease-in-out;
+  transform: translateX(-$nav-width + $nav-preview);
+  @media screen and (max-width: $nav-width) {
+    transform: translateX(-16rem);
+    width: 20rem;
+  }
+  &.is-active {
+    transform: translateX(0);
+  }
 }
 
 .l-page {
   width: 100%;
+  padding-left: $nav-preview;
+  transition: padding-left 250ms ease-in-out;
+  .is-active + & {
+    padding-left: $nav-width;
+  }
   main {
     font-family: $font-serif;
     margin: 2rem 1rem 6rem 1rem;
@@ -82,20 +101,5 @@
       font-size: 2.25rem;
       line-height: 1.2;
     }
-  }
-}
-
-// Fallback styles when JS is not available
-
-.no-js {
-  .l-wrapper {
-    flex-direction: column;
-  }
-  .c-menu li {
-    display: inline-block;
-    margin-right: 3rem;
-  }
-  .c-toggle {
-    display: none;
   }
 }

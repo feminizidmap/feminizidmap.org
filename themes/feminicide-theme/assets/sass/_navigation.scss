@@ -1,12 +1,4 @@
 .l-navigation__open {
-  width: 0;
-  overflow: hidden;
-  transition: width 260ms ease-in, padding 260ms ease-in;
-  &.is-active {
-    padding-left: 6rem;
-    width: 24rem;
-    max-width: 80vw;
-  }
   .c-menu {
     margin-top: 5rem;
     white-space: nowrap;
@@ -21,20 +13,6 @@
   display: flex;
   padding: 0 1.5rem 0 1.5rem;
   flex-direction : column;
-
-  .c-language-switch {
-    position: relative;
-    flex-basis: 45vh;
-    .rotation-helper {
-      position: absolute;
-      top: 8rem;
-      z-index: 90;
-      display: block;
-      left: 1.2em;
-      transform-origin: left bottom;
-      transform: rotate(-90deg);
-    }
-  }
 }
 
 
@@ -69,16 +47,40 @@
 }
 
 .c-toggle {
+  position: absolute;
+  top: 50vh;
   padding: 0;
   background: none;
   border: none;
   font: inherit;
   color: white;
   cursor: pointer;
+  .c-toggle__close {
+    display: none;
+  }
+  .is-active & {
+    .c-toggle__close {
+      display: block;
+    }
+    .c-toggle__hamburger {
+      display: none;
+    }
+  }
 }
 
 .c-language-switch {
   @include link-style;
   font-size: .8rem;
   white-space: nowrap;
+  position: relative;
+  flex-basis: 45vh;
+  .rotation-helper {
+    position: absolute;
+    top: 8rem;
+    z-index: 90;
+    display: block;
+    left: 1em;
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+  }
 }

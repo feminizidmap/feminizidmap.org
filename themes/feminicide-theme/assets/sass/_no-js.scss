@@ -1,0 +1,36 @@
+// Fallback styles when JS is not available
+
+.no-js {
+  .l-navigation {
+    position: static;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+    transform: translateX(0);
+    height: auto;
+  }
+  .l-navigation__close {
+    display: block;
+    padding: 0;
+  }
+  .rotation-helper {
+    position: static !important;
+    transform: none !important;
+  }
+  .c-menu {
+    margin-top: 1rem !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .l-page {
+    padding-left: 0;
+    transition: none;
+  }
+  .c-menu li {
+    margin-right: 3rem;
+  }
+  .c-toggle {
+    display: none;
+  }
+}

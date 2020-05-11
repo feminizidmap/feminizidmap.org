@@ -30,15 +30,20 @@ h.classList.remove('no-js');
 var toggle = document.getElementById('toggle');
 var menu = document.getElementById('menu');
 var logoBlack = document.getElementById('logo');
+var langSwitch = document.getElementById('langswitch')
 
 toggle.addEventListener('click', function(){
   if (menu.classList.contains('is-active')) {
     this.setAttribute('aria-expanded', 'false');
+    //this.classList.remove('sr-only');
+    langSwitch.classList.remove('sr-only');
     menu.classList.remove('is-active');
     logoBlack.classList.remove('is-hidden');
   } else {
     menu.classList.add('is-active');
     this.setAttribute('aria-expanded', 'true');
+    //this.classList.add('sr-only');
+    langSwitch.classList.add('sr-only');
     logoBlack.classList.add('is-hidden');
   }
 });

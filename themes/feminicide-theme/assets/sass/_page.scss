@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
   justify-content: space-between;
+  height: 2rem;
   font-family: $font-sans;
   margin: 2rem 1rem 6rem 1rem;
   @media screen and (min-width: $break-l) {
