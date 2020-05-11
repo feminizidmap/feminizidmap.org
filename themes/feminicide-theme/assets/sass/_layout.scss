@@ -13,7 +13,7 @@ $nav-preview: 3rem;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 3rem 0rem 3rem 3rem;
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, margin-left 250ms ease-in-out;
   transform: translateX(-$nav-width + $nav-preview);
   @media screen and (max-width: $nav-width) {
     transform: translateX(-16rem);
@@ -21,6 +21,9 @@ $nav-preview: 3rem;
   }
   &.is-active {
     transform: translateX(0);
+  }
+  &.is-peeking {
+    margin-left: 2em;
   }
 }
 
