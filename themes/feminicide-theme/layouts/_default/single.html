@@ -5,10 +5,10 @@
       {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
     </a>
   </div>
-  <div class="page-title">{{ .Page.Slug }}</div>
+  <h1 class="page-title">{{ .Page.Slug }}</h1>
 </header>
 <main class="page-main">
-  <h1>{{ .Title }}</h1>
+  <h2>{{ .Title }}</h2>
   {{ .Content }}
 </main>
 {{ end }}

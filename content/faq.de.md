@@ -24,5 +24,3 @@ Aliquam sed molestie ante. Nullam vel diam semper, ultrices massa vel, ornare sa
 ### Gibt es bereichts ähnliche Projekte?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat fermentum odio, at feugiat nibh vehicula quis. Integer consectetur dui non eros posuere aliquam id at nisi. Praesent in risus felis. Suspendisse mattis, ipsum quis tincidunt imperdiet, diam magna sollicitudin sapien, vitae bibendum lectus lorem quis arcu. Duis tempus, magna quis interdum semper, mauris ante sagittis eros, ac tempor lectus arcu vitae ex. Morbi tristique massa vitae neque placerat, ut ultrices justo pulvinar.
-
-

@@ -1,13 +1,12 @@
 ---
-title: FAQ 
+title: FAQ
 slug: faq
 description: What is Feminizidmap.org about?
 ---
 
-
 ### Why do you say femi(ni)cide?
 
-We use femi(ni)cide as an abbreviation of femicide and feminicide, and thus we aim to build conversations and enabling collaborations. We are a diverse team, and each of us have their naming preferences, as well as definitions. We are able to start working with a basic understanding of femi(ni)cide, but that does not mean that we all have share the same definitions, we think this will be updating while we develop this project. 
+We use femi(ni)cide as an abbreviation of femicide and feminicide, and thus we aim to build conversations and enabling collaborations. We are a diverse team, and each of us have their naming preferences, as well as definitions. We are able to start working with a basic understanding of femi(ni)cide, but that does not mean that we all have share the same definitions, we think this will be updating while we develop this project.
 
 
 ### What does your dataset include?

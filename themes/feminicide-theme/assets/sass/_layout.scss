@@ -35,8 +35,8 @@ $nav-preview: 3rem;
     font-family: $font-serif;
     margin: 2rem 1rem 6rem 1rem;
     @media screen and (min-width: $break-l) {
-      max-width: 38rem;
-      margin: 0 0 8rem 8rem;
+      max-width: 45rem;
+      margin: 0 0 8rem 14rem;
     }
     h1, h2, h3, h4 {
       font-family: $font-sans;
@@ -60,6 +60,7 @@ $nav-preview: 3rem;
       }
     }
     h3, h4 {
+      margin-top: 4rem;
       color: $neon-purple;
       font-size: 2rem;
       margin: 4rem 0 1rem 0;
