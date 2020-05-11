@@ -1,0 +1,40 @@
+{{ define "main" }}
+<header class="page-header">
+  <div class="page-logo">
+    <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
+      {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
+    </a>
+  </div>
+  <h1 class="page-title">{{ .Page.Slug }}</h1>
+</header>
+<main class="page-main">
+  <section>
+    <h2>{{ .Params.intro }}</h2>
+    <ul class="c-tilelist">
+      {{ $lang := .Lang }}
+      {{ range sort $.Site.Data.researchers "name" }}
+      <li>
+        <h3>{{.name}}</h3>
+        {{ if eq $lang "en"}}
+        <p>{{.text_en | markdownify}}</p>
+        {{ else }}
+        <p>{{.text_de | markdownify}}</p>
+        {{ end }}
+      </li>
+
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="font-sans page-highlight">
+    {{ .Content }}
+    <ul class="c-blocklist">
+      {{ range sort $.Site.Data.network "label" }}
+      <li>
+        <a href="{{ .link}}">{{.label}}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+</main>
+{{ end }}

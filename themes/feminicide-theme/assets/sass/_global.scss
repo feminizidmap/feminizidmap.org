@@ -15,7 +15,9 @@
 .font-white {
   color: white;
 }
-
+.font-sans {
+  font-family: $font-sans;
+}
 
 .fade-leave-active,
 .fade-once-active,
@@ -88,4 +90,3 @@
     opacity: 0;
   }
 }
-

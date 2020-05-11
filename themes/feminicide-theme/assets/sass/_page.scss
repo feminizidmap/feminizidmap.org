@@ -21,3 +21,33 @@
   font-weight: normal;
   text-transform: capitalize;
 }
+
+.page-highlight {
+  font-size: $font-size-mid;
+}
+
+.c-tilelist {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    flex: 0 0 20rem;
+  }
+}
+
+.c-blocklist {
+  margin-top: 3rem;
+  list-style: none;
+  padding: 0;
+  li {
+    border-bottom: 1px solid $grey-light;
+  }
+
+  a {
+    display: block;
+    padding: .3em 0;
+    text-decoration: none !important;
+  }
+}

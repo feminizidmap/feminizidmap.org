@@ -67,7 +67,7 @@ $nav-preview: 3rem;
     }
     a, a:visited {
       color: $grey-dark;
-      text-decoration: none;
+      text-decoration: underline;
       transition: all color 0.2s ease;
     }
     a:hover {
