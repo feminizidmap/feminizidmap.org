@@ -5,17 +5,12 @@
   }
 }
 
-
-
-
 .l-navigation__close {
   flex: 0 0 1rem;
   display: flex;
   padding: 0 1.5rem 0 1.5rem;
   flex-direction : column;
 }
-
-
 
 @mixin link-style {
   font-family: $font-sans;
@@ -49,6 +44,7 @@
 .c-toggle {
   position: absolute;
   top: 50vh;
+  right: 1rem;
   padding: 0;
   background: none;
   border: none;
@@ -79,7 +75,7 @@
     top: 8rem;
     z-index: 90;
     display: block;
-    left: 1em;
+    left: .5rem;
     transform-origin: left bottom;
     transform: rotate(-90deg);
   }
