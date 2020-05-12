@@ -6,17 +6,8 @@
   --unit-font-large: 1.4rem;
 }
 
-.bg-black {
-  background-color: black;
-}
-.bg-purple {
-  background-color: $neon-purple;
-}
-.font-white {
-  color: white;
-}
-.font-sans {
-  font-family: $font-sans;
+.is-hidden {
+  display: none;
 }
 
 .fade-leave-active,

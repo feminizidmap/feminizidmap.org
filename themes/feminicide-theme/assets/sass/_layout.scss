@@ -1,6 +1,3 @@
-$nav-width: 28rem;
-$nav-preview: 3rem;
-
 .l-wrapper {}
 
 .l-navigation {
@@ -16,7 +13,7 @@ $nav-preview: 3rem;
   transition: transform 250ms ease-in-out, margin-left 250ms ease-in-out;
   transform: translateX(-$nav-width + $nav-preview);
   @media screen and (max-width: $nav-width) {
-    transform: translateX(-16rem);
+    transform: translateX(-17rem);
     width: 20rem;
   }
   &.is-active {
@@ -33,6 +30,9 @@ $nav-preview: 3rem;
   transition: padding-left 250ms ease-in-out;
   .is-active + & {
     padding-left: $nav-width;
+    @media screen and (max-width: $nav-width) {
+      padding-left: 20rem;
+    }
   }
   main {
     font-family: $font-serif;
@@ -75,35 +75,6 @@ $nav-preview: 3rem;
     }
     a:hover {
       color: $neon-purple;
-    }
-  }
-}
-
-
-@media screen and (min-width: $break-s){
-
-.intro{
-    max-width: 50rem;
-    margin: 3rem 1rem 3rem 1rem;
-
-    h3 {
-      font-family: $font-serif;
-      font-weight: normal;
-      font-size: 1.85rem;
-      line-height: 1.25;
-    }
-  }
-}
-
-
-@media screen and (min-width: $break-l){
-  .intro{
-    max-width: 46rem;
-    margin: 5rem 0 3rem 14rem;
-
-    h3 {
-      font-size: 2.25rem;
-      line-height: 1.2;
     }
   }
 }

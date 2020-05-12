@@ -1,0 +1,26 @@
+- id: home_visual_title
+  translation: ""
+- id: home_visual_text
+  translation: ""
+- id: home_intro_title
+  translation: "Lorem ipsum"
+- id: home_intro_text
+  translation: "Lorem ipsum"
+- id: home_intro_link_label
+  translation: "Learn more"
+- id: home_stats_title
+  translation: "Lorem ipsum"
+- id: home_stats_text
+  translation: "Lorem ipsum"
+- id: home_cases_title
+  translation: "cases in 2019"
+- id: home_cases_text
+  translation: "Lorem ipsum"
+- id: home_murder_title
+  translation: "Murder is Murder is Murder"
+- id: home_murder_text
+  translation: "Lorem ipsum"
+- id: footer_one
+  translation: "If you want to report a case, just write to our email"
+- id: footer_two
+  translation: "For feedback, questions or collaboration requests, you can reach us via"
