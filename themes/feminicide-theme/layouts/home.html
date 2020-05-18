@@ -38,6 +38,13 @@
     <div class="c-portrait a" aria-hidden="true"></div>
     <div class="c-portrait b" aria-hidden="true"></div>
     <div class="c-portrait c" aria-hidden="true"></div>
+    <div class="c-label c">
+      {{ if ne .Lang "en"}}
+      {{ readFile "themes/feminicide-theme/static/tragoedie.svg" | safeHTML }}
+      {{ else }}
+      {{ readFile "themes/feminicide-theme/static/tragedy.svg" | safeHTML }}
+      {{ end }}
+    </div>
     <div class="c-label a">
       {{ if ne .Lang "en"}}
       {{ readFile "themes/feminicide-theme/static/familiendrama.svg" | safeHTML }}
@@ -52,13 +59,7 @@
       {{ readFile "themes/feminicide-theme/static/relationship_act.svg" | safeHTML }}
       {{ end }}
     </div>
-    <div class="c-label c">
-      {{ if ne .Lang "en"}}
-      {{ readFile "themes/feminicide-theme/static/tragoedie.svg" | safeHTML }}
-      {{ else }}
-      {{ readFile "themes/feminicide-theme/static/tragedy.svg" | safeHTML }}
-      {{ end }}
-    </div>
+
     <h2 class="h1 font-sans">{{ T "home_murder_title"}}</h2>
     <div class="text">{{ T "home_murder_text" | markdownify }}</div>
   </div>

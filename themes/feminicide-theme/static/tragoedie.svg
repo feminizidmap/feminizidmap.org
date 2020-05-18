@@ -1,8 +1,8 @@
-<svg class="strike-through" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="285px" height="68px" viewBox="0 0 285 68" style="enable-background:new 0 0 285 68;" xml:space="preserve">
+<svg class="strike-through" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="285px" height="68px" viewBox="0 5  285 68" style="enable-background:new 0 0 285 68;" xml:space="preserve">
     <style type="text/css">
 	.st0{enable-background:new    ;}
 	.st1{fill:#FFFFFF;}
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2-special{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 	.st3{fill:none;stroke:#FFFFFF;stroke-width:3;}
     </style>
     <g class="st0">
@@ -29,8 +29,8 @@
 		             c-8.7,0-15.1-6.5-15.1-15.9c0-9.1,6.1-15.8,14.8-15.8c8.2,0,14.3,6.4,14.3,15.5C252.8,46.2,252.8,46.8,252.7,47.5z M247.4,44
 		             c0-5.4-3.7-9.6-8.9-9.6c-5.1,0-8.9,3.9-9.1,9.6H247.4z"/>
     </g>
-    <circle class="st2" cx="147" cy="22" r="4"/>
-    <circle class="st2" cx="160" cy="22" r="4"/>
+    <circle class="st2-special" cx="147" cy="22" r="4"/>
+    <circle class="st2-special" cx="160" cy="22" r="4"/>
     <path class="st3 strike-through-line" d="M247.2,36.1c-72.2-0.5-144.5-1.2-216.7-1.6c-45.7-0.3,91.4,1.2,137.1,1.2c8.2,0-16.5,0.1-24.7-1.3
 	                             C109,28.3,75.5,19.8,41.7,13.1c-7.1-1.4-14.3-2.3-21.6-2.9c-5.8-0.4-12.2-2.6-17.5,0c-2.5,1.2,3.9,4.2,6.3,5.4
 	                             c7.1,3.7,14.6,6.4,22.1,9.2c4.2,1.6,8.6,3,13,3.7c3,0.5,7.5-2.8,9,0c2.6,4.7-0.5,11,0,16.4c0.2,1.9,0.5,4.4,2.1,5.4

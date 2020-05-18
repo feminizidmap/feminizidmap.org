@@ -161,19 +161,19 @@
 }
 
 .strike-through {
-  &:hover {
     .strike-through-line {
       stroke-dasharray: 5000;
       stroke-dashoffset: 5000;
-      animation: dash 1s ease-in-out;
+      animation: strike-through 2s ease-in-out;
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
     }
-  }
+    &.is-active .strike-through-line {
+      animation-play-state: running;
+    }
 }
-.strike-through-line {
 
-}
-
-@keyframes dash {
+@keyframes strike-through {
   to {
     stroke-dashoffset: 0;
   }
