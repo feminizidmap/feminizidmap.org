@@ -18,9 +18,11 @@
     max-width: 70rem;
   }
 }
-
 .bg-black {
   background-color: black;
+}
+.bg-black-purple {
+  background-color: $black-purple;
 }
 .bg-purple {
   background-color: $neon-purple;
@@ -68,17 +70,23 @@
 }
 
 .murder {
+  min-height: 75vh;
+  padding: 3rem 0 5rem 1rem;
+  @media screen and (min-width: $break-l) {
+    min-height: 85vh;
+    padding: 0 0 10rem 10rem;
+  }
   .h1 {
     font-size: 4rem;
     @media screen and (min-width: $break-l) {
-      font-size: 6rem;
+      grid-column: 1 / span 5;
+      font-size: 6.5rem;
+      line-height: 1;
     }
-    grid-column-start: 2;
-    grid-column-end: 5;
     grid-row-start: 2;
   }
   .text {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 8;
   }
@@ -100,8 +108,8 @@
 }
 
 .c-case {
-  flex: 0 1 6rem;
-  height: 8rem;
+  flex: 0 1 48px;
+  height: 62px;
   margin: 0 .3rem 0.3rem 0;
   background-color: grey;
 }
