@@ -27,11 +27,11 @@
 var h = document.querySelector('html');
 h.classList.remove('no-js');
 
+// Menu mouse toggle
 var toggle = document.getElementById('toggle');
 var menu = document.getElementById('menu');
 var logoBlack = document.getElementById('logo');
 var langSwitch = document.getElementById('langswitch')
-
 toggle.addEventListener('click', function(){
     if (menu.classList.contains('is-active')) {
         this.setAttribute('aria-expanded', 'false');
@@ -49,6 +49,7 @@ toggle.addEventListener('click', function(){
     }
 });
 
+// Menu mouse peek
 let targetArea = document.querySelector('.l-navigation__close').getBoundingClientRect();
 let senseArea = 120;
 document.addEventListener('mousemove', function(ev) {
@@ -60,6 +61,8 @@ document.addEventListener('mousemove', function(ev) {
     }
 });
 
+
+// HOME SVG animations
 let murderSection = document.querySelector(".murder");
 let svg = document.querySelectorAll('.strike-through');
 if (murderSection) {
@@ -75,4 +78,24 @@ if (murderSection) {
             svg[2].classList.add("is-active");
         }
     });
+}
+
+// name animation
+let splitLetters = (elem, split, klass) => {
+    let arr = elem.textContent.split(split);
+    let out = '';
+    if (arr.length) {
+        arr.forEach((v, i) => {
+            out += `<span class="letter letter-${i} ${klass}">${v}</span>`;
+        });
+        elem.textContent = '';
+        elem.innerHTML = out;
+    }
+}
+
+let name = document.querySelector('.name');
+let desc = document.querySelector('.desc');
+if (name && desc) {
+    splitLetters(name, "", "l-name");
+    splitLetters(desc, "", "l-desc");
 }
