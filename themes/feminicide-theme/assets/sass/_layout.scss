@@ -12,6 +12,7 @@
   padding: 3rem 0rem 3rem 3rem;
   transition: transform 250ms ease-in-out, margin-left 250ms ease-in-out;
   transform: translateX(-$nav-width + $nav-preview);
+  background-color: black;
   @media screen and (max-width: $nav-width) {
     transform: translateX(-17rem);
     width: 20rem;

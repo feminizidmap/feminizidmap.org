@@ -31,18 +31,17 @@
        })();
      });
 
-     /*
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('{{ .Site.BaseURL}}sw.js')
-                   .then(registration => {
-                     console.log('SW registration successful, scope: ', registration.scope);
-                   }, err => {
-                     console.log('SW registration failed: ', err);
-                   });
-        });
-      }
-     */
+
+     if ('serviceWorker' in navigator) {
+       window.addEventListener('load', () => {
+         navigator.serviceWorker.register('{{ .Site.BaseURL}}sw.js')
+                  .then(registration => {
+                    console.log('SW registration successful, scope: ', registration.scope);
+                  }, err => {
+                    console.log('SW registration failed: ', err);
+                  });
+       });
+     }
     </script>
 
     {{ $style := resources.Get "sass/site.scss" | resources.ToCSS }}

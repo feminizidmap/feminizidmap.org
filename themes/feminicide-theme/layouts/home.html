@@ -2,7 +2,7 @@
 {{ $style := resources.Get "sass/home.scss" | resources.ToCSS }}
 <link rel="stylesheet" href="{{$style.RelPermalink}}">
 
-{{ $script := resources.Get "js/home.js" }}
+{{ $script := resources.Get "js/home.js" | resources.Minify }}
 <script  type="text/javascript" src="{{ $script.RelPermalink }}"></script>
 {{ end }}
 
