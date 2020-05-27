@@ -106,9 +106,8 @@ let splitLetters = (str, split, klass) => {
 function buildElem(bound, val) {
     let a = document.createElement('div');
     a.classList.add('anim');
-    //debugger
-    a.style.top = Math.floor(Math.random() * (bound.height - 230)) + 100 + "px";
-    a.style.left = Math.floor(Math.random() * (bound.width - 300)) + 100 + "px";
+    a.style.top = Math.floor(Math.random() * (bound.height - 300)) + 100 + "px";
+    a.style.left = Math.floor(Math.random() * (bound.width - 400)) + 100 + "px";
     let n = document.createElement('div');
     n.classList.add('name');
     n.innerHTML = splitLetters(val.name, "", "l-name");
