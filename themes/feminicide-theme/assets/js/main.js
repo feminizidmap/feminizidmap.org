@@ -50,52 +50,15 @@ toggle.addEventListener('click', function(){
 });
 
 // Menu mouse peek
-let targetArea = document.querySelector('.l-navigation__close').getBoundingClientRect();
-let senseArea = 120;
-document.addEventListener('mousemove', function(ev) {
-    if (!menu.classList.contains('is-active')
-        && (ev.clientX < targetArea.width + senseArea)) {
-        menu.classList.add('is-peeking');
-    } else {
-        menu.classList.remove('is-peeking');
-    }
-});
-
-
-// HOME SVG animations
-let murderSection = document.querySelector(".murder");
-let svg = document.querySelectorAll('.strike-through');
-if (murderSection) {
-    document.querySelector('body').addEventListener("scroll", function (ev) {
-        let rect = murderSection.getBoundingClientRect();
-        if (rect.top < 270) {
-            svg[0].classList.add("is-active");
-        }
-        if (rect.top < 150) {
-            svg[1].classList.add("is-active");
-        }
-        if (rect.top < 50) {
-            svg[2].classList.add("is-active");
+if (window.innerWidth > 560) {
+    let targetArea = document.querySelector('.l-navigation__close').getBoundingClientRect();
+    let senseArea = 120;
+    document.addEventListener('mousemove', function(ev) {
+        if (!menu.classList.contains('is-active')
+            && (ev.clientX < targetArea.width + senseArea)) {
+            menu.classList.add('is-peeking');
+        } else {
+            menu.classList.remove('is-peeking');
         }
     });
-}
-
-// name animation
-let splitLetters = (elem, split, klass) => {
-    let arr = elem.textContent.split(split);
-    let out = '';
-    if (arr.length) {
-        arr.forEach((v, i) => {
-            out += `<span class="letter letter-${i} ${klass}">${v}</span>`;
-        });
-        elem.textContent = '';
-        elem.innerHTML = out;
-    }
-}
-
-let name = document.querySelector('.name');
-let desc = document.querySelector('.desc');
-if (name && desc) {
-    splitLetters(name, "", "l-name");
-    splitLetters(desc, "", "l-desc");
 }

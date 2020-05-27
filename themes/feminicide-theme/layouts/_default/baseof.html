@@ -20,14 +20,16 @@
         return createImageBitmap(blob).then(() => true, () => false);
       }
 
-      (async () => {
-        if(await supportsWebp()) {
-          document.querySelector('body').classList.add('has-webp');
-        }
-        else {
-          document.querySelector('body').classList.add('no-webp');
-        }
-      })();
+     document.addEventListener('DOMContentLoaded', () => {
+       (async () => {
+         if(await supportsWebp()) {
+           document.querySelector('body').classList.add('has-webp');
+         }
+         else {
+           document.querySelector('body').classList.add('no-webp');
+         }
+       })();
+     });
 
      /*
       if ('serviceWorker' in navigator) {
@@ -46,6 +48,7 @@
     {{ $style := resources.Get "sass/site.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{$style.RelPermalink}}">
     <meta name="theme-color" content="#63125E">
+    {{ block "head" . }}{{ end}}
   </head>
   <body>
     <!--[if IE]>

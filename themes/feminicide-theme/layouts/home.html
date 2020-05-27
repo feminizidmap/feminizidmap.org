@@ -1,3 +1,11 @@
+{{  define "head"}}
+{{ $style := resources.Get "sass/home.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{$style.RelPermalink}}">
+
+{{ $script := resources.Get "js/home.js" }}
+<script  type="text/javascript" src="{{ $script.RelPermalink }}"></script>
+{{ end }}
+
 {{ define "main" }}
 <header class="c-section header">
   <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
@@ -27,13 +35,18 @@
   <div class="c-section__inner">
     <h2 class="h1 font-sans"><span>XX</span> {{ T "home_cases_title" }}</h2>
     <div>{{ T "home_cases_text" | markdownify }}</div>
-    <div class="c-caselist">
-      <div class="c-case"></div>
-      <div class="c-case"></div>
-      <div class="c-case"></div>
-      <div class="c-case"></div>
-      <div class="c-case"></div>
-      <div class="c-case"></div>
+    <ul class="c-caselist">
+      {{ range $.Site.Data.cases }}
+      <li class="c-case case-{{ .id }}">
+        <div class="c-case-inner">
+          <p>{{ .name }}, {{ .age }}</p>
+          <p>{{ if ne .Lang "en"}}{{ .comment_de }}{{ else }}{{ .comment_en }}{{ end }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    <div class="c-case-infowrapper" aria-hidden="true">
+      <div class="c-case-info" aria-hidden="true"></div>
     </div>
   </div>
 </section>

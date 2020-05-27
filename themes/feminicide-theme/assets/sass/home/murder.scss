@@ -1,0 +1,98 @@
+// strike-through animation on home page
+.murder {
+  min-height: 75vh;
+  padding: 3rem 0 5rem 1rem;
+  @media screen and (min-width: $break-l) {
+    min-height: 85vh;
+    padding: 0 0 10rem 10rem;
+  }
+  .h1 {
+    font-size: 4rem;
+    @media screen and (min-width: $break-l) {
+      grid-column: 1 / span 5;
+      font-size: 6.5rem;
+      line-height: 1;
+    }
+    grid-row-start: 2;
+  }
+  .text {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8;
+  }
+  .c-section__inner {
+    @media screen and (min-width: $break-l) {
+      max-width: none;
+      margin-left: -3rem;
+      display: grid;
+      grid-template-columns: 3rem 1fr 1fr  1fr 1fr 1fr 1fr;
+      grid-template-rows: 3rem 10rem 8rem 5rem 15rem 5rem 5rem 5rem 1fr;
+    }
+  }
+}
+
+.c-portrait {
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: $break-l) {
+    display: none;
+  }
+  &.a {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-image: url("/bg-potrait-01-2x.png");
+  }
+  &.b {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url("/bg-potrait-02-2x.png");
+  }
+  &.c {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-image: url("/bg-potrait-03-2x.png");
+  }
+}
+.c-label {
+  &.a {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+  }
+  &.b {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 6;
+  }
+  &.c {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 3;
+  }
+}
+
+// SVG animations
+.strike-through {
+    .strike-through-line {
+      stroke-dasharray: 5000;
+      stroke-dashoffset: 5000;
+      animation: strike-through 2s ease-in-out;
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
+    }
+    &.is-active .strike-through-line {
+      animation-play-state: running;
+    }
+}
+
+@keyframes strike-through {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

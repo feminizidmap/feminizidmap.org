@@ -1,0 +1,120 @@
+// Cases on the home page
+
+.c-caselist {
+  margin-top: 3rem;
+  list-style: none;
+  padding: 0;
+}
+
+.c-shuffle {
+  padding: .1em .5em .2em;
+  border: none;
+  font-family: $font-sans;
+  font-size: 1.4rem;
+  color: white;
+  line-height: 1.45;
+  background-color: $neon-purple;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.c-case-info {
+  text-align: center;
+  margin: 2rem 0 2rem;
+  @media (hover:none) {
+    p:nth-of-type(1) {
+      display: block;
+      margin: 0;
+      font-size: 1.6rem;
+      font-family: $font-sans;
+    }
+    p:nth-of-type(2) {
+      display: inline-block;
+      padding: .1em 0.2em;
+      background-color: rgba($neon-purple, 0.1);
+      line-height: 1;
+    }
+  }
+
+  @media (hover: hover) {
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 3px $grey-dark;
+    padding: 0.1rem 1rem;
+    transition: transform 150ms ease-in-out;
+    transform: translateY(0);
+
+    &.is-away {
+      opacity: 0;
+      transform: translateY(0.6em);
+    }
+  }
+}
+
+$cases: 114;
+@for $i from 1 through $cases {
+  .c-case.case-#{$i} {
+    background-image: url("/cases/#{$i}.png");
+  }
+}
+
+.c-case-infowrapper {
+  text-align: center;
+}
+
+// fallback for no-JS
+.no-js {
+  .c-caselist {
+    @media screen and (min-width: $break-m) {
+      column-count: 2;
+    }
+    @media screen and (min-width: $break-l) {
+      column-count: 4;
+    }
+  }
+  .c-case {
+    background-size: 48px 64px;
+    background-repeat: no-repeat;
+    padding-left: 52px;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* IE 10+ */
+  }
+  .c-case {
+    margin-bottom: 1rem;;
+  }
+  .c-case p {
+    margin: 0;
+  }
+}
+
+// styles for JS
+html:not(.no-js) {
+  .c-caselist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .c-case {
+    flex: 0 1 24px;
+    height: 31px;
+    margin: 0 .3rem 0.3rem 0;
+    transition: border 250ms ease-in-out;
+    background-image: url("/cases/76.png");
+    background-size: cover;
+    &:hover,
+    &:active,
+    &.is-hover {
+      border: 4px solid $neon-pink;
+    }
+    @media screen and (min-width: $break-m) {
+      flex: 0 1 48px;
+      height: 62px;
+    }
+  }
+
+  .c-case-inner {
+    @extend .sr-only;
+  }
+}
