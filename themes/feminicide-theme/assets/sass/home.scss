@@ -40,6 +40,10 @@
 .font-sans {
   font-family: $font-sans;
 }
+.m0 {
+  margin: 0;
+}
+
 .h1 {
   letter-spacing: .025em;
   margin-top: 2rem;
@@ -52,6 +56,7 @@
 }
 
 .header {
+  position: relative;
   padding-top: 3rem; // !
   background-color: $dark-purple;
   background-image: linear-gradient(13deg, rgba(0,0,0,1) 22%, rgba(99,18,94,1) 80%);

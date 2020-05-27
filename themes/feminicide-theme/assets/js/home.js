@@ -33,26 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // header fadeout animation
-    let splitLetters = (elem, split, klass) => {
-        let arr = elem.textContent.split(split);
-        let out = '';
-        if (arr.length) {
-            arr.forEach((v, i) => {
-                out += `<span class="letter letter-${i} ${klass}">${v}</span>`;
-            });
-            elem.textContent = '';
-            elem.innerHTML = out;
-        }
-    };
-
-    let name = document.querySelector('.name');
-    let desc = document.querySelector('.desc');
-    if (name && desc) {
-        splitLetters(name, "", "l-name");
-        splitLetters(desc, "", "l-desc");
-    }
-
     // cases interaction
     let cases = document.querySelectorAll('.c-case');
     let container = document.querySelector('.c-case-info');
@@ -96,4 +76,48 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    fetch('/cases.json')
+        .then((r) => r.json())
+        .then((data) => {
+            let header = document.querySelector('.c-section.header');
+            let headerRect = header.getBoundingClientRect();
+            data.forEach((v, i) => {
+                let elem = buildElem(headerRect, v);
+                window.setTimeout(() => {
+                    header.appendChild(elem);
+                }, 4000 * i);
+            });
+        });
 });
+
+// header fadeout animation
+let splitLetters = (str, split, klass) => {
+    let arr = str.split(split);
+    let out = '';
+    if (arr.length) {
+        arr.forEach((v, i) => {
+            out += `<span class="letter letter-${i} ${klass}">${v}</span>`;
+        });
+    }
+    return out;
+};
+
+function buildElem(bound, val) {
+    let a = document.createElement('div');
+    a.classList.add('anim');
+    //debugger
+    a.style.top = Math.floor(Math.random() * (bound.height - 230)) + 100 + "px";
+    a.style.left = Math.floor(Math.random() * (bound.width - 300)) + 100 + "px";
+    let n = document.createElement('div');
+    n.classList.add('name');
+    n.innerHTML = splitLetters(val.name, "", "l-name");
+    let d = document.createElement('div');
+    d.classList.add('desc');
+    d.innerHTML = splitLetters(`war ${val.age}, ${val.comment_de}`, "", "l-desc"); // lang switch??
+
+    a.appendChild(n);
+    a.appendChild(d);
+
+    return a;
+}
