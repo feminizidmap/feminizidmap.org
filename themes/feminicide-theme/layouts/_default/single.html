@@ -1,5 +1,14 @@
 {{ define "main" }}
-<main>
+<header class="page-header">
+  <div class="page-logo">
+    <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
+      {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
+    </a>
+  </div>
+  <h1 class="page-title">{{ .Page.Slug }}</h1>
+</header>
+<main class="page-main">
+  <h2>{{ .Title }}</h2>
   {{ .Content }}
 </main>
 {{ end }}

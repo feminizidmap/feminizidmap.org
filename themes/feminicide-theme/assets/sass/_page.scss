@@ -1,0 +1,47 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.8rem;
+  font-family: $font-sans;
+  margin: 2rem 1rem 6rem 1rem;
+  @media screen and (min-width: $break-l) {
+    margin: 3rem 2rem 8rem 8rem;
+  }
+}
+
+.page-title {
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.page-highlight {
+  font-size: $font-size-mid;
+}
+
+.c-tilelist {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    flex: 0 0 20rem;
+  }
+}
+
+.c-blocklist {
+  margin-top: 3rem;
+  list-style: none;
+  padding: 0;
+  li {
+    border-bottom: 1px solid $grey-light;
+  }
+
+  a {
+    display: block;
+    padding: .3em 0;
+    text-decoration: none !important;
+  }
+}

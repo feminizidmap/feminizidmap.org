@@ -6,6 +6,10 @@
   --unit-font-large: 1.4rem;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .fade-leave-active,
 .fade-once-active,
 .fade-enter-active {
@@ -36,7 +40,12 @@
   transform:  translate(0, 0px);
 }
 
-
+.letter.blur {
+  animation: fadeOut 4s;
+  -webkit-filter: blur(35px);
+  filter: blur(35px);
+  opacity: 0;
+}
 
 @keyframes fadein{
   from{opacity:0}
@@ -57,4 +66,18 @@
 
 @-o-keyframes fadein{
   from{opacity:0}to{opacity:1}
+}
+
+@keyframes fadeOut {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 100;
+  }
+
+  100% {
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
 }

@@ -1,0 +1,76 @@
+- name: "Aleida"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    Doctoral Candidate at the Faculty of Law, University of Turku, my current research focuses on Femi(ni)cide in Germany (Theory, Policy and Law). Contributor since 2011 to the project Feminicidio.net.
+- name: "Alina"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    Doctoral researcher working on Sexuality Education, SRHR & Peace and Conflict Studies. Interested in the body, migration and queer-decolonial practices. I am nepantlera coming from the borderlands.
+- name: "Caroline"
+  active: true
+  text_de: >-
+
+  text_en: >-
+
+- name: "Dervla"
+  active: true
+  text_de: >-
+
+  text_en: >-
+
+- name: "Hannah"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    MA student working on media portrayal and media framing of femi(ni)cides in Germany with a special focus on racist rhethoric and othering.
+- name: "Isabel"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    Studies Peace and Conflict studies at the University of Marburg.
+- name: "Lisa"
+  active: true
+  text_de: >-
+    Softwareentwicklerin und Creative Technologist aus Berlin.
+  text_en: >-
+    Software developer and creative technologist based in Berlin.
+- name: "Nadine"
+  active: true
+  text_de: >-
+
+  text_en: >-
+
+- name: "Nora"
+  active: true
+  text_de: >-
+
+  text_en: >-
+
+- name: "Rafa"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    Activist, freelancer and independent researcher, based in Berlin.
+- name: "Vanessa"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    From a family with a migrant background, currently studies literature science in Berlin.
+- name: "Verena"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    Trainer in the field of civic education with young adults based in Berlin
+- name: "Marthe"
+  active: false
+- name: "Sabine"
+  active: false

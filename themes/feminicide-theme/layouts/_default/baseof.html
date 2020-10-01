@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
     <link rel="apple-touch-icon" href="Logo_192.png">
 
     <script>
@@ -20,70 +20,53 @@
         return createImageBitmap(blob).then(() => true, () => false);
       }
 
-      (async () => {
-        if(await supportsWebp()) {
-          document.querySelector('body').classList.add('has-webp');
-        }
-        else {
-          document.querySelector('body').classList.add('no-webp');
-        }
-      })();
+     document.addEventListener('DOMContentLoaded', () => {
+       (async () => {
+         if(await supportsWebp()) {
+           document.querySelector('body').classList.add('has-webp');
+         }
+         else {
+           document.querySelector('body').classList.add('no-webp');
+         }
+       })();
+     });
 
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('{{ .Site.BaseURL}}sw.js')
-                   .then(registration => {
-                     console.log('SW registration successful, scope: ', registration.scope);
-                   }, err => {
-                     console.log('SW registration failed: ', err);
-                   });
-        });
-      }
+     /*
+     if ('serviceWorker' in navigator) {
+       window.addEventListener('load', () => {
+         navigator.serviceWorker.register('{{ .Site.BaseURL}}sw.js')
+                  .then(registration => {
+                    console.log('SW registration successful, scope: ', registration.scope);
+                  }, err => {
+                    console.log('SW registration failed: ', err);
+                  });
+       });
+     }
+     */
     </script>
 
     {{ $style := resources.Get "sass/site.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{$style.RelPermalink}}">
-
     <meta name="theme-color" content="#63125E">
+    {{ block "head" . }}{{ end}}
   </head>
-  <body data-barba="wrapper">
+  <body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
+    <a href="#content" title="Skip to content" class="show-on-focus bg-purple font-white">Skip to content</a>
+    <div class="l-wrapper" data-barba="wrapper">
     {{ block "header" . }}
-      <header class="header">
-        <div class="menu">
-          <a href="/" title="Feminizidmap.org">
-            {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo.svg" | safeHTML }}
-          </a>
-          <!--<nav>
-            <ul>
-              <li><a href="/">{{ .Site.Params.navigation.project }}</a></li>
-              <li><a href="#">{{ .Site.Params.navigation.publications }}</a></li>
-              <li><a href="#">{{ .Site.Params.navigation.data }}</a></li>
-            </ul>
-          </nav>
-          -->
-
-          {{ partial "languageswitch.html" . }}
-        </div>
-        <h1>{{ .Title | safeHTML }}</h1>
-      </header>
-      {{ end }}
-    <div class="main-container" data-barba="container" data-barba-namespace="{{ .Slug }}-{{ .Lang }}">
-      {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-      {{ end }}
-    </div>
-
-    {{ block "footer" . }}
-    <footer class="footer">
-      <p>If you want to contribute to the documentation by reporting a case, you can report it to our email <a href="&#0109;&#097;&#0105;&#0108;&#0116;&#0111;&#058;&#0102;&#0101;&#0109;&#0105;&#0110;&#0105;&#0122;&#0105;&#0100;&#097;&#0108;&#0101;&#0114;&#0116;&#0115;&#064;&#0119;&#0101;&#098;&#046;&#0100;&#0101;">&#0102;&#0101;&#0109;&#0105;&#0110;&#0105;&#0122;&#0105;&#0100;&#097;&#0108;&#0101;&#0114;&#0116;&#0115;&#064;&#0119;&#0101;&#098;&#046;&#0100;&#0101;</a><br><br>
-        If you think that you can and want to collaborate, or, if you want to network with us, or for any other purposes, you can contact us to our email <a href="&#0109;&#097;&#0105;&#0108;&#0116;&#0111;:info@feminizidmap.org">info@feminizidmap.org</a><br><br>
-      <a href="/">Imprint</a>
-      </p>
-    </footer>
+      {{ partial "navigation.html" . }}
     {{ end }}
+      <div class="l-page" data-barba="container" data-barba-namespace="{{ .Slug }}-{{ .Lang }}">
+        {{ block "main" . }}{{ end }}
+
+        {{ block "footer" . }}
+        {{ partial "footer.html" . }}
+        {{ end }}
+      </div>
+    </div>
 
     {{ $barba := resources.Get "js/barba.dist.min.js" }}
     {{ $barba_css := resources.Get "js/barba-css.dist.min.js" }}

@@ -1,0 +1,9 @@
+<svg width="19px" height="19px" viewBox="0 -1 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Menu</title>
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"
+       stroke="#ffffff" stroke-width="2">
+      <path d="M0,1 L17,1"></path>
+      <path d="M0,8 L17,8"></path>
+      <path d="M0,15 L17,15"></path>
+    </g>
+</svg>

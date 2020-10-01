@@ -1,0 +1,82 @@
+.l-navigation__open {
+  .c-menu {
+    margin-top: 5rem;
+    white-space: nowrap;
+  }
+}
+
+.l-navigation__close {
+  flex: 0 0 1rem;
+  display: flex;
+  padding: 0 1.5rem 0 1.5rem;
+  flex-direction : column;
+}
+
+@mixin link-style {
+  font-family: $font-sans;
+  a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    &:hover,
+    &:active {
+      color: $grey-mid;
+      transition: all ease .2s;
+    }
+  }
+}
+
+
+.c-menu {
+  @include link-style;
+  padding: 0;
+  list-style: none;
+  font-size: 1.6rem;
+  @media screen and (min-width: $break-l) {
+    font-size: 2.5rem;
+  }
+
+  li {
+    //margin-bottom: 0.1rem;
+  }
+}
+
+.c-toggle {
+  position: absolute;
+  top: 50vh;
+  right: 1rem;
+  padding: 0;
+  background: none;
+  border: none;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+  .c-toggle__close {
+    display: none;
+  }
+  .is-active & {
+    .c-toggle__close {
+      display: block;
+    }
+    .c-toggle__hamburger {
+      display: none;
+    }
+  }
+}
+
+.c-language-switch {
+  @include link-style;
+  font-size: .8rem;
+  white-space: nowrap;
+  position: relative;
+  flex-basis: 45vh;
+  .rotation-helper {
+    position: absolute;
+    top: 8rem;
+    z-index: 90;
+    display: block;
+    left: .5rem;
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+  }
+}

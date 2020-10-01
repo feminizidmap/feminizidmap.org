@@ -1,0 +1,82 @@
+.l-wrapper {}
+
+.l-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $nav-width;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 3rem 0rem 3rem 3rem;
+  transition: transform 250ms ease-in-out, margin-left 250ms ease-in-out;
+  transform: translateX(-$nav-width + $nav-preview);
+  background-color: black;
+  @media screen and (max-width: $nav-width) {
+    transform: translateX(-17rem);
+    width: 20rem;
+  }
+  &.is-active {
+    transform: translateX(0);
+  }
+  &.is-peeking {
+    margin-left: 2em;
+  }
+}
+
+.l-page {
+  width: 100%;
+  padding-left: $nav-preview;
+  transition: padding-left 250ms ease-in-out;
+  .is-active + & {
+    padding-left: $nav-width;
+    @media screen and (max-width: $nav-width) {
+      padding-left: 20rem;
+    }
+  }
+  main {
+    font-family: $font-serif;
+    margin: 2rem 1rem 6rem 1rem;
+    @media screen and (min-width: $break-l) {
+      max-width: 45rem;
+      margin: 0 0 8rem 8rem;
+    }
+    h1, h2, h3, h4 {
+      font-family: $font-sans;
+      font-weight: normal;
+      line-height: 1.15;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 1.7rem 0;
+      @media screen and (min-width: $break-l) {
+        font-size: 3.9rem;
+        margin: 0 0 2.5rem 0;
+      }
+    }
+    h2 {
+      font-size: 3rem;
+      margin: 3.5rem 0 1.5rem 0;
+      @media screen and (min-width: $break-l) {
+        font-size: 3.3rem;
+        margin: 5rem 0 2rem 0;
+      }
+    }
+    h3, h4 {
+      margin-top: 4rem;
+      color: $neon-purple;
+      font-size: 2rem;
+      margin: 4rem 0 1rem 0;
+    }
+    a, a:visited {
+      color: $grey-dark;
+      text-decoration: underline;
+      transition: all color 0.2s ease;
+    }
+    a:hover {
+      color: $neon-purple;
+    }
+  }
+}

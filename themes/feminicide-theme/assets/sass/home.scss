@@ -1,0 +1,100 @@
+@import "variables.scss";
+@import "a11y.scss";
+@import "home/names.scss";
+@import "home/cases.scss";
+@import "home/murder.scss";
+
+.c-section {
+  //min-height: 75vh;
+  min-height: 40vh;
+  padding: 3rem 0 5rem 1rem;
+  @media screen and (min-width: $break-l) {
+    //min-height: 85vh;
+    min-height: 40vh;
+    padding: 5rem 3rem 10rem 8rem;
+  }
+  &.bg-white {
+    a {
+      color: #neon-purple;
+      text-decoration: none;
+    }
+  }
+}
+
+.c-section__inner {
+  @media screen and (min-width: $break-l) {
+    //max-width: 70rem;
+    max-width: 60rem;
+  }
+}
+
+.bg-black {
+  background-color: black;
+}
+.bg-black-purple {
+  background-color: $black-purple;
+}
+.bg-purple {
+  background-color: $neon-purple;
+}
+.font-white {
+  color: white;
+}
+.font-sans {
+  font-family: $font-sans;
+}
+.m0 {
+  margin: 0;
+}
+
+.h1 {
+  letter-spacing: .025em;
+  margin-top: 2rem;
+  font-size: 3.35rem;
+  line-height: 1.15;
+  font-weight: normal;
+}
+
+.frontpage-title {
+  letter-spacing: .025em;
+  margin-top: 2rem;
+  font-size: 2.35rem;
+  line-height: 1.15;
+  font-weight: normal;
+  color: white;
+
+  @media screen and (min-width: $break-l) {
+    font-size: 4.35rem;
+    max-width: 38vw;
+    margin: 5vh 0 2vh;
+  }
+}
+
+.size-mid {
+  font-size: 1.6rem;
+}
+
+.header {
+  position: relative;
+  padding-top: 3rem; // !
+  background-color: $dark-purple;
+  background-image: linear-gradient(13deg, rgba(0,0,0,1) 22%, rgba(99,18,94,1) 80%);
+  background-position: 50% 50%;
+ // background-attachment: fixed;
+  background-size: cover;
+}
+
+.no-webp .header {
+  background-image: url("/bg-gradient-01-1280.png");
+}
+
+.has-webp .header {
+  background-image: url("/bg-gradient-01.webp");
+}
+
+.facts {
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/bg-facts-01-2x.png");
+}

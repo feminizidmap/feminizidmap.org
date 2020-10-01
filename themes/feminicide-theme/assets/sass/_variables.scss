@@ -1,13 +1,27 @@
 $grey-dark: rgba(0,0,0,0.8);
 $grey-mid: #696F7E;
+$grey-light: #ccc;
 $bright-pruple: #F5E6FF;
 $neon-purple: #9F00FF;
 $dark-purple: #63125E;
+$black-purple: #120016;
+$neon-pink: #fd09ff;
 
 
-
-//Typography
+// Typography
 $font-sans:  'Stabil',  -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 $font-serif: 'Blanco-Regular', Georgia, serif;
 $font-letterspacing: 0.02em;
 $font-size-small: 80%;
+$font-size-mid: 120%;
+
+
+// Breakpoints
+$break-s: 320px;
+$break-m: 560px;
+$break-l: 1024px;
+
+
+// Navigation and menu
+$nav-width: 28rem;
+$nav-preview: 3rem;

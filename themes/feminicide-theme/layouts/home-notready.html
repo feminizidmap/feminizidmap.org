@@ -1,0 +1,80 @@
+{{  define "head"}}
+{{ $style := resources.Get "sass/home.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{$style.RelPermalink}}">
+
+{{ $script := resources.Get "js/home.js" | resources.Minify }}
+<script type="text/javascript" src="{{ $script.RelPermalink }}"></script>
+{{ end }}
+
+{{ define "main" }}
+<header class="c-section header">
+  <h1 class="m0"><a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
+    {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo.svg" | safeHTML }}
+  </a></h1>
+</header>
+<section class="c-section bg-white font-sans">
+  <div class="c-section__inner">
+    <h2 class="h1">{{ T "home_intro_title" }}</h2>
+    <p class="size-mid">{{ T "home_intro_text" | markdownify }}</p>
+    <p class="size-mid"><a href="{{ .Site.BaseURL }}">{ {{ T "home_intro_link_label"}} }</a></p>
+  </div>
+</section>
+<section class="c-section facts bg-purple font-white font-sans">
+  <div class="c-section__inner">
+    <h2 class="sr-only"></h2>
+    <div class="h1">{{ T "home_stats_text" | markdownify }}</div>
+  <div class="c-section__inner">
+</section>
+<!--
+     <section class="c-section bg-white">
+     <div class="c-section__inner">
+     <h2 class="h1 font-sans"><span>XX</span> {{ T "home_cases_title" }}</h2>
+     <div>{{ T "home_cases_text" | markdownify }}</div>
+     <ul class="c-caselist">
+     {{ range $.Site.Data.cases }}
+     <li class="c-case case-{{ .id }}">
+     <div class="c-case-inner">
+     <p>{{ .name }}, {{ .age }}</p>
+     <p>{{ if ne .Lang "en"}}{{ .comment_de }}{{ else }}{{ .comment_en }}{{ end }}</p>
+     </div>
+     </li>
+     {{ end }}
+     </ul>
+     <div class="c-case-infowrapper" aria-hidden="true">
+     <div class="c-case-info" aria-hidden="true"></div>
+     </div>
+     </div>
+     </section> -->
+<section class="murder bg-black-purple font-white">
+  <div class="c-section__inner">
+
+    <div class="c-portrait a" aria-hidden="true"></div>
+    <div class="c-portrait b" aria-hidden="true"></div>
+    <div class="c-portrait c" aria-hidden="true"></div>
+    <div class="c-label c">
+      {{ if ne .Lang "en"}}
+      {{ readFile "themes/feminicide-theme/static/tragoedie.svg" | safeHTML }}
+      {{ else }}
+      {{ readFile "themes/feminicide-theme/static/tragedy.svg" | safeHTML }}
+      {{ end }}
+    </div>
+    <div class="c-label a">
+      {{ if ne .Lang "en"}}
+      {{ readFile "themes/feminicide-theme/static/familiendrama.svg" | safeHTML }}
+      {{ else }}
+      {{ readFile "themes/feminicide-theme/static/familydrama.svg" | safeHTML }}
+      {{ end }}
+    </div>
+    <div class="c-label b">
+      {{ if ne .Lang "en"}}
+      {{ readFile "themes/feminicide-theme/static/beziehungstat.svg" | safeHTML }}
+      {{ else }}
+      {{ readFile "themes/feminicide-theme/static/relationship_act.svg" | safeHTML }}
+      {{ end }}
+    </div>
+
+    <h2 class="h1 font-sans">{{ T "home_murder_title"}}</h2>
+    <div class="text">{{ T "home_murder_text" | markdownify }}</div>
+  </div>
+</section>
+{{ end }}
