@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (murderSection) {
         document.querySelector('body').addEventListener("scroll", function (ev) {
             let rect = murderSection.getBoundingClientRect();
+            console.log('here')
             if (rect.top < 270) {
                 svg[0].classList.add("is-active");
             }
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // cases interaction
+    /*
     let cases = document.querySelectorAll('.c-case');
     let container = document.querySelector('.c-case-info');
     if (cases && container) {
@@ -89,9 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 4000 * i);
             });
         });
+    */
 });
 
 // header fadeout animation
+/*
 let splitLetters = (str, split, klass) => {
     let arr = str.split(split);
     let out = '';
@@ -120,3 +124,4 @@ function buildElem(bound, val) {
 
     return a;
 }
+*/

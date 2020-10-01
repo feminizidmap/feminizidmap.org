@@ -31,7 +31,7 @@
        })();
      });
 
-
+     /*
      if ('serviceWorker' in navigator) {
        window.addEventListener('load', () => {
          navigator.serviceWorker.register('{{ .Site.BaseURL}}sw.js')
@@ -42,6 +42,7 @@
                   });
        });
      }
+     */
     </script>
 
     {{ $style := resources.Get "sass/site.scss" | resources.ToCSS }}

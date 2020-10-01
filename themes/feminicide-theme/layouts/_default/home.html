@@ -1,0 +1,19 @@
+{{  define "head"}}
+{{ $style := resources.Get "sass/home.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{$style.RelPermalink}}">
+{{ end }}
+
+{{ define "main" }}
+<header class="c-section header">
+  <h1 class="m0"><a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
+    {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo.svg" | safeHTML }}
+  </a></h1>
+
+  <h2 class="frontpage-title">{{ .Title }}</h2>
+</header>
+<section class="c-section bg-white font-sans">
+  <div class="c-section__inner">
+    <div class="size-mid">{{ .Content }}</div>
+  </div>
+</section>
+{{ end }}

@@ -1,16 +1,76 @@
-- name: "Person A"
+- name: "Aleida"
+  active: true
   text_de: >-
-    Hier steht gan viel mit link [test](#) und so weiter
+
   text_en: >-
-    Here is a lot of [test](#) and so forth Aliquam sed molestie ante. Nullam vel diam semper, ultrices massa vel, ornare sapien. Aenean pulvinar nunc in metus luctus gravida. Proin eleifend maximus dui, ut vestibulum eros finibus vel. Aliquam vel gravida diam, ac rutrum ex. Sed et dignissim dui. Curabitur nulla sem, semper eget odio vitae, semper tempor justo.
-- name: "Person B"
+    Doctoral Candidate at the Faculty of Law, University of Turku, my current research focuses on Femi(ni)cide in Germany (Theory, Policy and Law). Contributor since 2011 to the project Feminicidio.net.
+- name: "Alina"
+  active: true
   text_de: >-
-    Hier steht gan viel mit link [test](#) und so weiter
+
   text_en: >-
-    Here is a lot of [test](#) and so forth
-    Aliquam sed molestie ante. Nullam vel diam semper, ultrices massa vel, ornare sapien. Aenean pulvinar nunc in metus luctus gravida. Proin eleifend maximus dui, ut vestibulum eros finibus vel. Aliquam vel gravida diam, ac rutrum ex. Sed et dignissim dui. Curabitur nulla sem, semper eget odio vitae, semper tempor justo.
-- name: "Person c"
+    Doctoral researcher working on Sexuality Education, SRHR & Peace and Conflict Studies. Interested in the body, migration and queer-decolonial practices. I am nepantlera coming from the borderlands.
+- name: "Caroline"
+  active: true
   text_de: >-
-    Hier steht gan viel mit link [test](#) und so weiter
+
   text_en: >-
-    Here is a lot of [test](#) and so forth
+
+- name: "Dervla"
+  active: true
+  text_de: >-
+
+  text_en: >-
+
+- name: "Hannah"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    MA student working on media portrayal and media framing of femi(ni)cides in Germany with a special focus on racist rhethoric and othering.
+- name: "Isabel"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    Studies Peace and Conflict studies at the University of Marburg.
+- name: "Lisa"
+  active: true
+  text_de: >-
+    Softwareentwicklerin und Creative Technologist aus Berlin.
+  text_en: >-
+    Software developer and creative technologist based in Berlin.
+- name: "Nadine"
+  active: true
+  text_de: >-
+
+  text_en: >-
+
+- name: "Nora"
+  active: true
+  text_de: >-
+
+  text_en: >-
+
+- name: "Rafa"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    Activist, freelancer and independent researcher, based in Berlin.
+- name: "Vanessa"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    From a family with a migrant background, currently studies literature science in Berlin.
+- name: "Verena"
+  active: true
+  text_de: >-
+
+  text_en: >-
+    Trainer in the field of civic education with young adults based in Berlin
+- name: "Marthe"
+  active: false
+- name: "Sabine"
+  active: false

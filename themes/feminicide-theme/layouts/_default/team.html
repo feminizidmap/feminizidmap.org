@@ -13,6 +13,7 @@
     <ul class="c-tilelist">
       {{ $lang := .Lang }}
       {{ range sort $.Site.Data.researchers "name" }}
+      {{ if eq .active true}}
       <li>
         <h3>{{.name}}</h3>
         {{ if eq $lang "en"}}
@@ -21,20 +22,21 @@
         <p>{{.text_de | markdownify}}</p>
         {{ end }}
       </li>
-
+      {{ end }}
       {{ end }}
     </ul>
+    <section>
+      <h3>{{ .Params.thanks }}</h3>
+      {{ range sort $.Site.Data.researchers "name" }}
+      {{ if eq .active false}}
+      <p>{{ .name }}</p>
+      {{ end}}
+      {{ end }}
+    </section>
   </section>
 
   <section class="font-sans page-highlight">
     {{ .Content }}
-    <ul class="c-blocklist">
-      {{ range sort $.Site.Data.network "label" }}
-      <li>
-        <a href="{{ .link}}">{{.label}}</a>
-      </li>
-      {{ end }}
-    </ul>
   </section>
 </main>
 {{ end }}

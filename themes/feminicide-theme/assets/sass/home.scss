@@ -5,10 +5,12 @@
 @import "home/murder.scss";
 
 .c-section {
-  min-height: 75vh;
+  //min-height: 75vh;
+  min-height: 40vh;
   padding: 3rem 0 5rem 1rem;
   @media screen and (min-width: $break-l) {
-    min-height: 85vh;
+    //min-height: 85vh;
+    min-height: 40vh;
     padding: 5rem 3rem 10rem 8rem;
   }
   &.bg-white {
@@ -21,7 +23,8 @@
 
 .c-section__inner {
   @media screen and (min-width: $break-l) {
-    max-width: 70rem;
+    //max-width: 70rem;
+    max-width: 60rem;
   }
 }
 
@@ -51,6 +54,22 @@
   line-height: 1.15;
   font-weight: normal;
 }
+
+.frontpage-title {
+  letter-spacing: .025em;
+  margin-top: 2rem;
+  font-size: 2.35rem;
+  line-height: 1.15;
+  font-weight: normal;
+  color: white;
+
+  @media screen and (min-width: $break-l) {
+    font-size: 4.35rem;
+    max-width: 38vw;
+    margin: 5vh 0 2vh;
+  }
+}
+
 .size-mid {
   font-size: 1.6rem;
 }

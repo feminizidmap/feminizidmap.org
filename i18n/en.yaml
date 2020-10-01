@@ -21,6 +21,6 @@
 - id: home_murder_text
   translation: "Lorem ipsum"
 - id: footer_one
-  translation: "If you want to report a case, just write to our email"
+  translation: "If you want to contribute to the documentation by reporting a case, you can report it to our email: "
 - id: footer_two
-  translation: "For feedback, questions or collaboration requests, you can reach us via"
+  translation: "If you think that you can and want to collaborate, if you want to network with us, or for any other purposes, you can contact us at our email"

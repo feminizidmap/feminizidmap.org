@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{$style.RelPermalink}}">
 
 {{ $script := resources.Get "js/home.js" | resources.Minify }}
-<script  type="text/javascript" src="{{ $script.RelPermalink }}"></script>
+<script type="text/javascript" src="{{ $script.RelPermalink }}"></script>
 {{ end }}
 
 {{ define "main" }}
@@ -25,25 +25,26 @@
     <div class="h1">{{ T "home_stats_text" | markdownify }}</div>
   <div class="c-section__inner">
 </section>
-<section class="c-section bg-white">
-  <div class="c-section__inner">
-    <h2 class="h1 font-sans"><span>XX</span> {{ T "home_cases_title" }}</h2>
-    <div>{{ T "home_cases_text" | markdownify }}</div>
-    <ul class="c-caselist">
-      {{ range $.Site.Data.cases }}
-      <li class="c-case case-{{ .id }}">
-        <div class="c-case-inner">
-          <p>{{ .name }}, {{ .age }}</p>
-          <p>{{ if ne .Lang "en"}}{{ .comment_de }}{{ else }}{{ .comment_en }}{{ end }}</p>
-        </div>
-      </li>
-      {{ end }}
-    </ul>
-    <div class="c-case-infowrapper" aria-hidden="true">
-      <div class="c-case-info" aria-hidden="true"></div>
-    </div>
-  </div>
-</section>
+<!--
+     <section class="c-section bg-white">
+     <div class="c-section__inner">
+     <h2 class="h1 font-sans"><span>XX</span> {{ T "home_cases_title" }}</h2>
+     <div>{{ T "home_cases_text" | markdownify }}</div>
+     <ul class="c-caselist">
+     {{ range $.Site.Data.cases }}
+     <li class="c-case case-{{ .id }}">
+     <div class="c-case-inner">
+     <p>{{ .name }}, {{ .age }}</p>
+     <p>{{ if ne .Lang "en"}}{{ .comment_de }}{{ else }}{{ .comment_en }}{{ end }}</p>
+     </div>
+     </li>
+     {{ end }}
+     </ul>
+     <div class="c-case-infowrapper" aria-hidden="true">
+     <div class="c-case-info" aria-hidden="true"></div>
+     </div>
+     </div>
+     </section> -->
 <section class="murder bg-black-purple font-white">
   <div class="c-section__inner">
 
