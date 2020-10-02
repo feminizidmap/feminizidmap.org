@@ -31,6 +31,12 @@
        })();
      });
 
+     if ('serviceWorkre' in navigator) {
+       serviceWorkerRegistration.unregister().then(function(boolean) {
+         console.log("sw unregistered")
+       });
+     }
+
      /*
      if ('serviceWorker' in navigator) {
        window.addEventListener('load', () => {
