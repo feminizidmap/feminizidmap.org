@@ -9,6 +9,7 @@ Angaben gemäß § 5 TMG:
 Aleida -
 Yo-Kylä 18A 5, 20540, Turku, Finland.
 
+[info@feminizidmap.org](&#0109;&#097;&#0105;&#0108;&#0116;&#0111;&#058;info@feminizidmap.org)
 
 ### Haftungsausschuss
 
