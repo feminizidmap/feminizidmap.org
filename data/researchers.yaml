@@ -1,20 +1,15 @@
 - name: "Aleida"
   active: true
   text_de: >-
-
+    Doktorandin an einer Juristischen Fakultät. Ihre aktuelle Forschung konzentriert sich auf Femi(ni)zide in Deutschland. Seit 2011 ist sie auch Teil des Projekts Feminicidio.net.
   text_en: >-
     Doctoral Candidate in Law. My current research focuses on Femi(ni)cide in Germany. I am contributor to the project Feminicidio.net since 2011.
 - name: "Alina"
   active: true
   text_de: >-
-
+    Doktorandin mit den Arbeitsschwerpunkten Sexualerziehung, SRHR & Friedens- und Konfliktforschung. Interessiert sich für die Themen Körper, Migration und queer-dekoloniale Praktiken. Sie ist Nepantlera und kommt aus dem Grenzland.
   text_en: >-
     Doctoral researcher working on Sexuality Education, SRHR & Peace and Conflict Studies. Interested in the body, migration and queer-decolonial practices. I am nepantlera coming from the borderlands.
-- name: "Caroline"
-  active: true
-  text_de: >-
-
-  text_en: >-
 
 - name: "Dervla"
   active: true
@@ -25,19 +20,19 @@
 - name: "Hannah"
   active: true
   text_de: >-
-
+    MA-Studentin, die sich mit der medialen Darstellung und Framing von Femi(ni)ziden in Deutschland beschäftigt, mit besonderem Schwerpunkt auf rassistische Rhetorik und Othering.
   text_en: >-
     MA student working on media portrayal and media framing of femi(ni)cides in Germany with a special focus on racist rhethoric and othering.
 - name: "Isabel"
   active: true
   text_de: >-
-
+    Studium der Friedens- und Konfliktforschung an der Universität Marburg.
   text_en: >-
     Studies Peace and Conflict studies at the University of Marburg.
 - name: "Lisa"
   active: true
   text_de: >-
-    Softwareentwicklerin und Creative Technologist aus Berlin.
+    Softwareentwicklerin und kreative Technologin mit Sitz in Berlin.
   text_en: >-
     Software developer and creative technologist based in Berlin.
 - name: "Nadine"
@@ -49,28 +44,30 @@
 - name: "Nora"
   active: true
   text_de: >-
-
+    Sie arbeitet in einem deutschen Unternehmen im Bereich Big Data & Analysen.
   text_en: >-
     Nora works in the field of big data & analytics in a German company.
 - name: "Rafa"
   active: true
   text_de: >-
-
+    Aktivistin, Freiberuflerin und unabhängige Forscherin mit Sitz in Berlin.
   text_en: >-
     Activist, freelancer and independent researcher, based in Berlin.
 - name: "Vanessa"
   active: true
   text_de: >-
-
+    Aus einer Familie mit Migrationshintergrund, studiert derzeit Literaturwissenschaft in Berlin.
   text_en: >-
     From a family with a migrant background, currently studies literature science in Berlin.
 - name: "Verena"
   active: true
   text_de: >-
-
+    Trainerin im Bereich der politischen Bildung für junge Erwachsene mit Sitz in Berlin.
   text_en: >-
     Trainer in the field of civic education with young adults based in Berlin
 - name: "Marthe"
   active: false
 - name: "Sabine"
+  active: false
+- name: "Caroline"
   active: false

@@ -27,7 +27,7 @@
     </ul>
     <section>
       <h3>{{ .Params.thanks }}</h3>
-      {{ range sort $.Site.Data.researchers "name" }}
+      {{ range $.Site.Data.researchers }}
       {{ if eq .active false}}
       <p>{{ .name }}</p>
       {{ end}}
