@@ -10,31 +10,47 @@
     Doktorandin mit den Arbeitsschwerpunkten Sexualerziehung, SRHR & Friedens- und Konfliktforschung. Interessiert sich für die Themen Körper, Migration und queer-dekoloniale Praktiken. Sie ist Nepantlera und kommt aus dem Grenzland.
   text_en: >-
     Doctoral researcher working on Sexuality Education, SRHR & Peace and Conflict Studies. Interested in the body, migration and queer-decolonial practices. I am nepantlera coming from the borderlands.
-
 - name: "Dervla"
   active: true
   text_de: >-
 
   text_en: >-
-
+- name: "Elena"
+  active: true
+  text_de: >-
+    Hat Soziale Arbeit studiert. Leitet das interkulturelle Projekt "Empowerment durch Bildung", gerichtet an junge Menschen mit Migrations- und Fluchterfahrung. Während ihres Studiums hat sie sich auf das Thema Feminizide fokussiert. 
+  text_en: >-
+    Studied Social Works. Managing the intercultural project "Empowerment through Education" adressing young migrants and refugees. During her studies she focused on the topic of feminicides.
 - name: "Hannah"
   active: true
   text_de: >-
-    MA-Studentin, die sich mit der medialen Darstellung und Framing von Femi(ni)ziden in Deutschland beschäftigt, mit besonderem Schwerpunkt auf rassistische Rhetorik und Othering.
+    Masterstudentin, die sich mit medialem Framing von Femi(ni)ziden in Deutschland beschäftigt, Schwerpunkt: Othering, Rassismus und Klassismus.
   text_en: >-
-    MA student working on media portrayal and media framing of femi(ni)cides in Germany with a special focus on racist rhethoric and othering.
+    MA student working on media framing of femi(ni)cides in Germany with a special focus on othering, racism and classism.
 - name: "Isabel"
   active: true
   text_de: >-
-    Studium der Friedens- und Konfliktforschung an der Universität Marburg.
+    Doktorandin in der Sozialpsychologie & Friedens- und Konfliktforschung. Aktueller Fokus auf Männlichkeitsforschung, sowie den Umgang mit geschlechtsspezifischer Gewalt in Nachkriegsgesellschaften
   text_en: >-
-    Studies Peace and Conflict studies at the University of Marburg.
+    Doctorial research in Social Psychology & Peace and Conflict Studies.Current research focus on masculinities and dealing with gender-based and anti-queer violence in post-conflict societies.
+- name: "Leonie"
+  active: true
+  text_de: >-
+    Arbeitet in Berlin im Bereich politischer Kommuniaktion.
+  text_en: >-
+    Works in political communications, based in Berlin.
 - name: "Lisa"
   active: true
   text_de: >-
     Softwareentwicklerin und kreative Technologin mit Sitz in Berlin.
   text_en: >-
     Software developer and creative technologist based in Berlin.
+- name: "Myri"
+  active: true
+  text_de: >-
+    Lehrkraft und Doktorandin in den Gender Studies, lernt Programmieren zum Spaß, aus Berlin.
+  text_en: >-
+    Teaching and doing research in gender studies, learning how to code out of fun, based in Berlin.
 - name: "Nadine"
   active: true
   text_de: >-
