@@ -20,4 +20,4 @@ DefaultContentLanguage = "en"
     researchers = "/researchers"
     faq = "/faq"
   [params.secondary]
-    imprint = "Imprint"
+    imprint = "/imprint"
