@@ -1,5 +1,6 @@
 ---
 title: Über das Projekt
+navname: Über
 slug: ueber
 description: ""
 ---

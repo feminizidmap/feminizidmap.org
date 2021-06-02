@@ -1,6 +1,7 @@
 ---
 title: Questions and answers
-slug: faq
+slug: FAQ
+navname: FAQ
 description: What is Feminizidmap.org about?
 ---
 

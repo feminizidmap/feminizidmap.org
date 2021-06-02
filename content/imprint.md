@@ -1,6 +1,7 @@
 ---
 title: Imprint
 slug: imprint
+navname: Imprint
 ---
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:

@@ -1,6 +1,7 @@
 ---
 title: About the Project
-slug: about
+slug: About
+navname: About
 description: What is Feminizidmap.org about?
 ---
 

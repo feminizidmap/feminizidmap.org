@@ -15,12 +15,18 @@
 
     <ul class="c-menu">
       {{ $site := .Site }}
-      {{ range $key, $val := .Site.Params.navigation }}
-      <li><a href="{{$site.BaseURL}}{{$key}}">{{$val}}</a></li>
+        {{ range $key, $val := .Site.Params.navigation }}
+        {{ with $site.GetPage $val }}
+          <li><a href="{{ .Permalink }}">{{ .Params.navname }}</a></li>
+        {{ end }}
       {{ end }}
+
       {{ range $key, $val := .Site.Params.secondary }}
-      <li><a href="{{$site.BaseURL}}{{$key}}">{{$val}}</a></li>
+        {{ with $site.GetPage $val }}
+          <li><a href="{{ .Permalink }}">{{ .Params.navname }}</a></li>
+        {{ end }}
       {{ end }}
+
     </ul>
   </div>
 </nav>
