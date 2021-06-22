@@ -1,11 +1,3 @@
-:root {
-  --timing: 0.25s;
-  --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
-  --unit-maxwidth-text: 35em;
-  --unit-line-height: 1.4em;
-  --unit-font-large: 1.4rem;
-}
-
 .is-hidden {
   display: none;
 }
@@ -15,7 +7,6 @@
 .fade-enter-active {
   transition: opacity var(--timing) var(--bezier), transform var(--timing) var(--bezier);
 }
-
 
 .fade-leave {
   opacity: 1;
