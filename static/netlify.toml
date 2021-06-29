@@ -1,4 +1,4 @@
 [[headers]]
     for = "/*"
     [headers.values]
-        Access-Control-Allow-Origin = "https://briefkasten.feminizidmap.org http://localhost:3000"
+        Access-Control-Allow-Origin = "https://briefkasten.feminizidmap.org, http://localhost:3000"
