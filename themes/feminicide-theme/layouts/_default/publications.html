@@ -18,7 +18,6 @@
         <p>{{.authors}}</p>
         <p>{{.year}}</p>
         <p>{{.link}}</p>
-
       </li>
       {{ end }}
       {{ end }}
@@ -26,8 +25,13 @@
     <section>
       <h3>{{ .Params.project_related }}</h3>
       {{ range $.Site.Data.publications }}
-      {{ if eq .active true}}
-      <p>{{ .title }}</p>
+      {{ if eq .project_related true}}
+      <li>
+        <p>{{.title}}</p>
+        <p>{{.authors}}</p>
+        <p>{{.year}}</p>
+        <p>{{.link}}</p>
+      </li>
       {{ end}}
       {{ end }}
     </section>
