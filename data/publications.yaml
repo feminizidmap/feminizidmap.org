@@ -3,3 +3,9 @@
   year: 2021
   link: https://feminizidmap.org/
   project_related: true
+
+- title: "Some other publication"
+  authors: by someone
+  year: 2021
+  link: https://feminizidmap.org/
+  project_related: false

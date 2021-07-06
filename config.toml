@@ -19,5 +19,6 @@ DefaultContentLanguage = "en"
     about = "/about"
     researchers = "/researchers"
     faq = "/faq"
+    publications = "/publications"
   [params.secondary]
     imprint = "/imprint"
