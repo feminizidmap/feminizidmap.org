@@ -1,11 +1,18 @@
 - title: "Data Activism and Femicide/Feminicide, in: The Routledge International Handbook of Femicide and Feminicide. Edited by Saide Mobayed and Prof. Myrna Dawson."
-  authors: feminizidmap.org
+  authors: by feminizidmap.org
   year: 2021
-  link: https://feminizidmap.org/
+  link: "https://feminizidmap.org/"
   project_related: true
 
-- title: "Some other publication"
-  authors: by someone
-  year: 2021
-  link: https://feminizidmap.org/
+- title: "Femizid: Nur ein lateinamerikanisches Phänomen? In: Franz von Liszt Institute Working Paper. Band 2018/01. Franz von Liszt Institute - Justus Liebig University Giessen"
+  authors: Alejandra Castillo Ara
+  year: 2018
+  link: "https://feminizidmap.org/"
+  project_related: false
+
+- title: "feminizidmap.org (2021): Data Activism and Femicide/Feminicide, in: The Routledge International Handbook of Femicide and Feminicide. Edited by Saide Mobayed and Prof. Myrna Dawson, p. 112-130."
+  link: "https://feminizidmap.org/"
+  project_related: true
+
+- title: "Alejandra Castillo Ara: Femizid: Nur ein lateinamerikanisches Phänomen? In: Franz von Liszt Institute Working Paper. Band 2018/01. Franz von Liszt Institute - Justus Liebig University Giessen, 2018"
   project_related: false
