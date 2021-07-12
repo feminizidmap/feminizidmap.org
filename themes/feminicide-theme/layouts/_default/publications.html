@@ -10,7 +10,7 @@
 <main class="page-main">
   <section>
     <h2>{{ .Params.intro }}</h2>
-    <ul class="c-tilelist">
+    <ul class="pub-list">
       {{ range sort $.Site.Data.publications "title" }}
       {{ if eq .project_related false}}
       <li>
@@ -24,6 +24,7 @@
     </ul>
     <section>
       <h3>{{ .Params.project_related }}</h3>
+    <ul class="pub-list">
       {{ range $.Site.Data.publications }}
       {{ if eq .project_related true}}
       <li>
@@ -34,6 +35,7 @@
       </li>
       {{ end}}
       {{ end }}
+    </ul>
     </section>
   </section>
 
