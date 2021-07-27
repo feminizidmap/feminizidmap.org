@@ -1,9 +1,9 @@
 ---
-title: Publications
+title: Contributions
 slug: publications
-navname: Publications
+navname: Contributions
 description: ""
-intro: "Our Publications"
-project_related: Collaborative publications by our whole team
+intro: "Other Contributions"
+project_related: Collaborative contributions by our whole team
 layout: publications
 ---

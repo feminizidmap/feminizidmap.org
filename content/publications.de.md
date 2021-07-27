@@ -1,9 +1,9 @@
 ---
-title: Publikationen
+title: Veröffentlichungen
 slug: publikationen
-navname: Publikationen
+navname: Veröffentlichungen
 description: ""
-intro: "Unsere Publikationen"
-project_related: Gemeinsames Publikationen des Teams
+intro: "Weitere Veröffentlichungen"
+project_related: Gemeinsame Veröffentlichungen des Teams
 layout: publications
 ---

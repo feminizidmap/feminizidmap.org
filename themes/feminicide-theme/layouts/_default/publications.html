@@ -9,30 +9,30 @@
 </header>
 <main class="page-main">
   <section>
-    <h2>{{ .Params.intro }}</h2>
-    <ul class="pub-list">
-      {{ range sort $.Site.Data.publications "title" }}
-      {{ if eq .project_related false}}
-      <li>
-        <p>{{.title}}</p>
-        <p>{{.authors}}</p>
-        <p>{{.year}}</p>
-        <p><a href="{{.link}}">{{.link}}</a></p>
-      </li>
+    <h3>{{ .Params.project_related }}</h3>
+  <ul class="pub-list">
+    {{ range $.Site.Data.publications }}
+    {{ if eq .project_related true}}
+    <li>
+      <p>{{.title}}</p>
+      <p>{{.authors}}</p>
+      <p>{{.year}}</p>
+      <p><a href="{{.link}}">{{.link}}</a></p>
+    </li>
       {{ end }}
       {{ end }}
     </ul>
     <section>
-      <h3>{{ .Params.project_related }}</h3>
-    <ul class="pub-list">
-      {{ range $.Site.Data.publications }}
-      {{ if eq .project_related true}}
-      <li>
-        <p>{{.title}}</p>
-        <p>{{.authors}}</p>
-        <p>{{.year}}</p>
-        <p><a href="{{.link}}">{{.link}}</a></p>
-      </li>
+      <h3>{{ .Params.intro }}</h3>
+      <ul class="pub-list">
+        {{ range sort $.Site.Data.publications "title" }}
+        {{ if eq .project_related false}}
+        <li>
+          <p>{{.title}}</p>
+          <p>{{.authors}}</p>
+          <p>{{.year}}</p>
+          <p><a href="{{.link}}">{{.link}}</a></p>
+        </li>
       {{ end}}
       {{ end }}
     </ul>
