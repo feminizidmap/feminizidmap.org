@@ -1,0 +1,9 @@
+<li>
+    <p>
+        <span>{{.title}}</span>
+        {{ range .tags }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+    </p>
+    {{ if .link }}<p><a href="{{.link}}">{{.link}}</a></p>{{ end }}
+</li>

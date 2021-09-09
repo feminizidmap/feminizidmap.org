@@ -10,18 +10,11 @@
 <main class="page-main">
     <section>
         <h2>{{ .Params.intro }}</h2>
-        <section class="font-sans page-highlight">
-            {{ .Content }}
-        </section>
+        {{ .Content }}
         <ul class="pub-list">
-            {{ range sort $.Site.Data.publications "title" }}
+            {{ range $.Site.Data.publications }}
             {{ if eq .project_related true}}
-            <li>
-                <p>{{.title}}</p>
-                <p>{{.authors}}</p>
-                <p>{{.year}}</p>
-                <p><a href="{{.link}}">{{.link}}</a></p>
-            </li>
+            {{ partial "publication_item.html" . }}
             {{ end }}
             {{ end }}
         </ul>
@@ -30,18 +23,11 @@
             <ul class="pub-list">
                 {{ range $.Site.Data.publications }}
                 {{ if eq .project_related false}}
-                <li>
-                    <p>{{.title}}</p>
-                    <p>{{.authors}}</p>
-                    <p>{{.year}}</p>
-                    <p><a href="{{.link}}">{{.link}}</a></p>
-                </li>
+                {{ partial "publication_item.html" . }}
                 {{ end}}
                 {{ end }}
             </ul>
         </section>
     </section>
-
-
 </main>
 {{ end }}
