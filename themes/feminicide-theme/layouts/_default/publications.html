@@ -1,46 +1,33 @@
 {{ define "main" }}
 <header class="page-header">
-  <div class="page-logo">
-    <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
-      {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
-    </a>
-  </div>
-  <h1 class="page-title">{{ .Page.Slug }}</h1>
+    <div class="page-logo">
+        <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
+            {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
+        </a>
+    </div>
+    <h1 class="page-title">{{ .Page.Slug }}</h1>
 </header>
 <main class="page-main">
-  <section>
-    <h3>{{ .Params.project_related }}</h3>
-  <ul class="pub-list">
-    {{ range $.Site.Data.publications }}
-    {{ if eq .project_related true}}
-    <li>
-      <p>{{.title}}</p>
-      <p>{{.authors}}</p>
-      <p>{{.year}}</p>
-      <p><a href="{{.link}}">{{.link}}</a></p>
-    </li>
-      {{ end }}
-      {{ end }}
-    </ul>
     <section>
-      <h3>{{ .Params.intro }}</h3>
-      <ul class="pub-list">
-        {{ range sort $.Site.Data.publications "title" }}
-        {{ if eq .project_related false}}
-        <li>
-          <p>{{.title}}</p>
-          <p>{{.authors}}</p>
-          <p>{{.year}}</p>
-          <p><a href="{{.link}}">{{.link}}</a></p>
-        </li>
-      {{ end}}
-      {{ end }}
-    </ul>
+        <h2>{{ .Params.intro }}</h2>
+        {{ .Content }}
+        <ul class="pub-list">
+            {{ range $.Site.Data.publications }}
+            {{ if eq .project_related true}}
+            {{ partial "publication_item.html" . }}
+            {{ end }}
+            {{ end }}
+        </ul>
+        <!-- <section>
+             <h3>{{ .Params.project_related }}</h3>
+             <ul class="pub-list">
+             {{ range $.Site.Data.publications }}
+             {{ if eq .project_related false}}
+             {{ partial "publication_item.html" . }}
+             {{ end}}
+             {{ end }}
+             </ul>
+             </section> -->
     </section>
-  </section>
-
-  <section class="font-sans page-highlight">
-    {{ .Content }}
-  </section>
 </main>
 {{ end }}

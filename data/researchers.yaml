@@ -1,9 +1,9 @@
 - name: "Aleida"
   active: true
   text_de: >-
-    Doktorandin an einer Juristischen Fakultät. Ihre aktuelle Forschung konzentriert sich auf Femi(ni)zide in Deutschland. Seit 2011 ist sie auch Teil des Projekts Feminicidio.net.
+    Doktorandin an einer Juristischen Fakultät und Mitbegründerin von Feminizidmap. Meine aktuelle Forschung konzentriert sich auf Femi(ni)zide in Deutschland.
   text_en: >-
-    Doctoral Candidate in Law. My current research focuses on Femi(ni)cide in Germany. I am contributor to the project Feminicidio.net since 2011.
+    Doctoral Candidate in Law and co-founder of Feminizidmap. My current research focuses on femi(ni)cide in Germany.
 - name: "Alina"
   active: true
   text_de: >-
@@ -13,12 +13,13 @@
 - name: "Dervla"
   active: true
   text_de: >-
-
+    Dervla ist eine feministische Aktivistin, Übersetzerin und Künstlerin in Berlin.
   text_en: >-
+    Dervla is a feminist activist, translator and artist based in Berlin.
 - name: "Elena"
   active: true
   text_de: >-
-    Hat Soziale Arbeit studiert. Leitet das interkulturelle Projekt "Empowerment durch Bildung", gerichtet an junge Menschen mit Migrations- und Fluchterfahrung. Während ihres Studiums hat sie sich auf das Thema Feminizide fokussiert. 
+    Hat Soziale Arbeit studiert. Leitet das interkulturelle Projekt "Empowerment durch Bildung", gerichtet an junge Menschen mit Migrations- und Fluchterfahrung. Während ihres Studiums hat sie sich auf das Thema Feminizide fokussiert.
   text_en: >-
     Studied Social Works. Managing the intercultural project "Empowerment through Education" adressing young migrants and refugees. During her studies she focused on the topic of feminicides.
 - name: "Hannah"
@@ -32,7 +33,7 @@
   text_de: >-
     Doktorandin in der Sozialpsychologie & Friedens- und Konfliktforschung. Aktueller Fokus auf Männlichkeitsforschung, sowie den Umgang mit geschlechtsspezifischer Gewalt in Nachkriegsgesellschaften
   text_en: >-
-    Doctorial research in Social Psychology & Peace and Conflict Studies.Current research focus on masculinities and dealing with gender-based and anti-queer violence in post-conflict societies.
+    Doctorial research in Social Psychology & Peace and Conflict Studies. Current research focus on masculinities and dealing with gender-based and anti-queer violence in post-conflict societies.
 - name: "Leonie"
   active: true
   text_de: >-
@@ -42,9 +43,9 @@
 - name: "Lisa"
   active: true
   text_de: >-
-    Softwareentwicklerin und kreative Technologin mit Sitz in Berlin.
+    Creative Technologist aus Berlin und Mitbegründerin von Feminizidmap.
   text_en: >-
-    Software developer and creative technologist based in Berlin.
+    Creative technologist based in Berlin and co-founder of Feminizidmap.
 - name: "Myri"
   active: true
   text_de: >-
@@ -52,7 +53,7 @@
   text_en: >-
     Teaching and doing research in gender studies, learning how to code out of fun, based in Berlin.
 - name: "Nadine"
-  active: true
+  active: false
   text_de: >-
 
   text_en: >-
@@ -83,7 +84,7 @@
     Trainer in the field of civic education with young adults based in Berlin
 - name: "Marthe"
   active: false
-- name: "Sabine"
+- name: "Sabine (co-founder)"
   active: false
 - name: "Caroline"
   active: false
