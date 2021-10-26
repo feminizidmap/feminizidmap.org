@@ -5,5 +5,19 @@
         <span class="tag">{{ . }}</span>
         {{ end }}
     </p>
-    {{ if .link }}<p><a href="{{.link}}">{{.link}}</a></p>{{ end }}
+    {{ if .link }}
+    <p>
+        <a href="{{.link}}">
+            {{ .link_name }}
+        </a>
+    </p>{{ end }}
+
+    {{ if .links }}
+    {{ range .links }}
+    <p>
+        <a href="{{.url}}">
+            {{ .name }}
+        </a>
+    </p>{{ end }}
+    {{ end }}
 </li>
