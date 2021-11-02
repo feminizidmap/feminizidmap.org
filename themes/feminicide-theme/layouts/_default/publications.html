@@ -18,16 +18,16 @@
             {{ end }}
             {{ end }}
         </ul>
-        <!-- <section>
-             <h3>{{ .Params.project_related }}</h3>
-             <ul class="pub-list">
-             {{ range $.Site.Data.publications }}
-             {{ if eq .project_related false}}
-             {{ partial "publication_item.html" . }}
-             {{ end}}
-             {{ end }}
-             </ul>
-             </section> -->
+        <section>
+           <h3>{{ .Params.project_related }}</h3>
+           <ul class="pub-list">
+               {{ range $.Site.Data.publications }}
+               {{ if eq .project_related false}}
+               {{ partial "publication_item.html" . }}
+               {{ end}}
+               {{ end }}
+           </ul>
+        </section>
     </section>
 </main>
 {{ end }}
