@@ -1,4 +1,4 @@
-- title: "Feminizidmap. (forthcoming 2022). “TBC”. In The Routledge International Handbook of Femicide and Feminicide. Edited by Saide Mobayed and Prof. Myrna Dawson."
+- title: "Feminizidmap. (2022, forthcoming). “TBC”. In The Routledge International Handbook of Femicide and Feminicide. Edited by Saide Mobayed and Prof. Myrna Dawson."
   project_related: true
   tags:
     - book chapter
@@ -56,31 +56,32 @@
   tags:
     - interview
 
-- title: "Luján Pinelo, Aleida (2019, September 6). Kritische Kommentierung zu den Keynotes In: Dokumentation der Jahreskonferenz 2019 von DaMigra am 06.09.2019 in Erfurt. Erfurt. (Conference transcript)"
-  project_related: false
-  tags:
-    - conference transcript
-
-- title: "Luján, Aleida (2018, May). A theoretical approach to the concept of femi(ni)cide. In: Philosophical Journal of Conflict and Violence. Vol. 2. Issue 1. 40-63. doi: 10.22618/TP.PJCV.20171.1"
-  project_related: false
-  tags:
-    - article
-
 - title: "Luján Pinelo, Aleida (2021, forthcoming). Research and documentation of femi(ni)cide in Germany. In: WomenBeing Magazine. Issue 2."
   project_related: false
   tags:
     - article
 
-- title: "Luján Pinelo, Aleida. 2015. A theoretical approach to the concept of femicide/feminicide. MA Thesis:  Utrecht University."
+- title: "Luján Pinelo, Aleida (2019). Kritische Kommentierung zu den Keynotes. In: Dokumentation der Jahreskonferenz 2019 von DaMigra am 06.09.2019 in Erfurt."
   project_related: false
-  link: https://dspace.library.uu.nl/handle/1874/320468
-  link_name: "Download the text"
   tags:
-    - monograph
+    - conference transcript
 
-- title: "Luján Pinelo, Aleida (2017, February 10). En Alemania “no hay feminicidios” según su gobierno pero en 2015 se registraron 311 feminicidios íntimos [According to the German government, there are no feminicides in Germany but, in 2015 311 intimate feminicides were registered]. In: Feminicidio.net. Madrid. Available in"
+- title: "Luján, Aleida (2018). A theoretical approach to the concept of femi(ni)cide. In: Philosophical Journal of Conflict and Violence. Vol. 2. Issue 1. 40-63. doi: 10.22618/TP.PJCV.20171.1"
+  project_related: false
+  tags:
+    - article
+
+
+- title: "Luján Pinelo, Aleida (2017). En Alemania “no hay feminicidios” según su gobierno pero en 2015 se registraron 311 feminicidios íntimos [According to the German government, there are no feminicides in Germany but, in 2015 311 intimate feminicides were registered]. In: Feminicidio.net. Madrid."
   project_related: false
   link: https://feminicidio.net/en-alemania-no-hay-feminicidios-segun-su-gobierno-pero-en-el-2015-se-registraron-311-feminicidios-intimos/
   link_name: "Read the article"
   tags:
     - article
+
+- title: "Luján Pinelo, Aleida (2015). A theoretical approach to the concept of femicide/feminicide. MA Thesis:  Utrecht University."
+  project_related: false
+  link: https://dspace.library.uu.nl/handle/1874/320468
+  link_name: "Download the text"
+  tags:
+    - monograph
