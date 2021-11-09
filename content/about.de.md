@@ -13,7 +13,7 @@ Wir erkennen an, dass unsere Arbeit von [Feminicidio.net](https://feminicidio.ne
 
 Im November 2021 erhielt feminizidmap.org den [Margherita-von-Brentano-Preis](https://www.mvbz.fu-berlin.de/termine/20211116_mvb-preisverleihung_2021.html) der Freien Universität Berlin.
 
-Von März bis August 2021 erhielt feminizidmap.org Förderung durch den [Prototype Fund](https://prototypefund.de/project/feminizidmap/).
+Von März bis August 2021 erhielt feminizidmap.org Förderung durch den [Prototype Fund](https://prototypefund.de/project/feminizidmap/) für die Entwicklung einer Datenbank. 
 
 {{< partial "logowall.html" >}}
 
