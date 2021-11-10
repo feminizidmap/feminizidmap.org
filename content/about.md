@@ -9,6 +9,14 @@ We document all [femi(ni)cides](#we-call-it-feminicide-or-femicide) and killings
 
 We acknowledge that we were inspired and helped by the work of [Feminicidio.net](https://feminicidio.net).
 
+### Awards and funding
+
+In November 2021 feminizidmap.org received the [Margherita-von-Brentano Price](https://www.mvbz.fu-berlin.de/termine/20211116_mvb-preisverleihung_2021.html) of Freie Universität Berlin.
+
+From March to August 2021 feminizidmap.org received funding through the [Prototype Fund](https://prototypefund.de/project/feminizidmap/) to develop database software.
+
+{{< partial "logowall.html" >}}
+
 ### We call it feminicide or femicide
 
 The choice of terms has generated a heated debate amongst theorists and activists in the Americas, and there is no consensus on the matter. We are a diverse team, and each of us has our own naming preferences as well as definitions. Therefore, we use femi(ni)cide as an abbreviation of femicide and feminicide, to build conversations and enable collaborations.
