@@ -1,7 +1,7 @@
 ---
 title: Forscherinnen
 slug: forscherinnen
-navname: Forscherinnen
+navname: Team
 description: ""
 intro: "Unser Team"
 thanks: "Wir bedanken uns bei unseren ehemaligen Kollaborateur:innen"
