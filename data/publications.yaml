@@ -3,6 +3,14 @@
   tags:
     - book chapter
 
+- title: "Beeck, Hannah (2021). Männer töten Frauen, weil sie Frauen sind – auch in Deutschland. Panel discussion organized by Gleichstellungsbeauftragte Stadt Köln."
+  project_related: true
+  links:
+    - url: https://www.youtube.com/watch?v=ARvVMdQGuqo
+      name: "Watch the panel discussion"
+  tags:
+    - talk
+
 - title: "de Luna Aldape, Alina and Isabel Müller (2021). Femi(ni)zid oder Frauenmord? Von der Notwendigkeit über Femi(ni)zide zu sprechen. In: UNEINS Nr. 1, S. 25-28."
   project_related: true
   tags:
@@ -27,6 +35,11 @@
       name: "Watch the talk"
   tags:
     - talk
+
+- title: "Aleida Luján Pinelo (2021). Femi(ni)cide: an introduction. Workshop. Organized by the Berliner Netzwerk gegen Feminizide."
+  project_related: true
+  tags:
+    - workshop
 
 - title: "Feminizidmap (2020). “Feminizidmap Project”. Newsletter thus by Dani Nikitenko."
   project_related: true
@@ -60,6 +73,11 @@
   project_related: false
   tags:
     - article
+
+- title: "Beeck, Hannah (2021). Mediales Framing von Femi(ni)ziden und Tötungsdelikten an Frauen in Deutschland. Masterarbeit. Freie Universität Berlin."
+  project_related: false
+  tags:
+    - thesis
 
 - title: "Luján Pinelo, Aleida (2019). Kritische Kommentierung zu den Keynotes. In: Dokumentation der Jahreskonferenz 2019 von DaMigra am 06.09.2019 in Erfurt."
   project_related: false
