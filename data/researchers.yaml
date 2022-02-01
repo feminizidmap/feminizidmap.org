@@ -5,7 +5,7 @@
   text_en: >-
     Doctoral Candidate in Law and co-founder of Feminizidmap. My current research focuses on femi(ni)cide in Germany.
 - name: "Alina"
-  active: true
+  active: false
   text_de: >-
     Doktorandin mit den Arbeitsschwerpunkten Sexualerziehung, SRHR & Friedens- und Konfliktforschung. Interessiert sich für die Themen Körper, Migration und queer-dekoloniale Praktiken. Sie ist Nepantlera und kommt aus dem Grenzland.
   text_en: >-
@@ -25,9 +25,9 @@
 - name: "Hannah"
   active: true
   text_de: >-
-    Masterstudentin, die sich mit medialem Framing von Femi(ni)ziden in Deutschland beschäftigt, Schwerpunkt: Othering, Rassismus und Klassismus.
+    Sozialwissenschaftlerin mit dem Fokus Antifeminismus. MA-Arbeit über mediales Framing von Femi(ni)ziden in Deutschland mit Fokus auf Othering, Rassismus und Klassismus.
   text_en: >-
-    MA student working on media framing of femi(ni)cides in Germany with a special focus on othering, racism and classism.
+    Social Scientist working on the topic of antifeminism. MA-thesis on media framing of femi(ni)cides in Germany with a special focus on othering, racism and classism.
 - name: "Isabel"
   active: true
   text_de: >-
