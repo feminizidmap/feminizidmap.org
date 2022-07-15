@@ -1,3 +1,21 @@
+
+- title: "Beeck, Hannah and Aleida Luján Pinelo (2022).“Feminicide and Violence
+Against Women”. Organized by Goethe-Institut in cooperation with ICI Berlin."
+  project_related: true
+  links:
+    - url: https://www.ici-berlin.org/events/feminicide-and-violence-against-women/
+      name: "Watch the panel discussion"
+  tags:
+    - talk
+
+- title: "Beeck, Hannah (2022). Frauenmord beim Namen nennen. Ein intersektionaler Blick auf Femizide. Organized by Evangelische Akademie zu Berlin."
+  project_related: true
+  links:
+    - url: https://www.eaberlin.de/aktuelles/2022/femizide-benennen-schutzkonzepte-verbessern/
+      name: "More information about the event"
+  tags:
+    - talk
+
 - title: "Feminizidmap. (2022, forthcoming). “TBC”. In The Routledge International Handbook of Femicide and Feminicide. Edited by Saide Mobayed and Prof. Myrna Dawson."
   project_related: true
   tags:
@@ -69,8 +87,11 @@
   tags:
     - interview
 
-- title: "Luján Pinelo, Aleida (2021, forthcoming). Research and documentation of femi(ni)cide in Germany. In: WomenBeing Magazine. Issue 2."
+- title: "Luján Pinelo, Aleida (2021). Research and documentation of femi(ni)cide in Germany. In: WomenBeing Magazine. Issue 2."
   project_related: false
+  links:
+    - url: https://issuu.com/womenbeingmag/docs/wb_magazine_issue_2?fbclid=IwAR1FojBzdgbttV8vwhhvXN6-PCKG_bDdHwtXa-Os1Ulfe6i1DP2eMNs8BGc
+      name: "Read the article"
   tags:
     - article
 

@@ -13,14 +13,14 @@ Wir erkennen an, dass unsere Arbeit von [Feminicidio.net](https://feminicidio.ne
 
 Im November 2021 erhielt feminizidmap.org den [Margherita-von-Brentano-Preis](https://www.mvbz.fu-berlin.de/termine/20211116_mvb-preisverleihung_2021.html) der Freien Universität Berlin.
 
-Von März bis August 2021 erhielt feminizidmap.org Förderung durch den [Prototype Fund](https://prototypefund.de/project/feminizidmap/) für die Entwicklung einer Datenbank. 
+Von März bis August 2021 erhielt feminizidmap.org Förderung durch den [Prototype Fund](https://prototypefund.de/project/feminizidmap/) für die Entwicklung einer Datenbank.
 
 {{< partial "logowall.html" >}}
 
 
 ### Wir sprechen von Feminizid oder Femizid
 
-Die Frage nach der Begriffswahl hat eine hitzige Debatte unter Theoretiker:innen und Aktivist:innen in den Amerikas ausgelöst, ohne einen Konsens hervorzubringen. Wir sind ein vielfältiges Team und jede:r von uns hat eigene Namenspräferenzen und Definitionen. Deshalb verwenden wir Femi(ni)zide als eine Abkürzung der beiden Begriffe und um Diskussionen und Zusammenarbeit zu ermöglichen.
+Die Frage nach der Begriffswahl hat eine hitzige Debatte unter Theoretiker:innen und Aktivist:innen in den Amerikas ausgelöst, ohne einen Konsens hervorzubringen. Wir sind ein vielfältiges Team und jede:r von uns hat eigene Namenspräferenzen und Definitionen. Deshalb verwenden wir [Femi(ni)zide](https://trivent-publishing.eu/img/cms/04-%20Aleida%20Luj%C3%A1n%20Pinelo.pdf) als eine Abkürzung der beiden Begriffe und um Diskussionen und Zusammenarbeit zu ermöglichen.
 
 #### Definitionen
 

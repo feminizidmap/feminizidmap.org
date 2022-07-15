@@ -19,7 +19,7 @@ From March to August 2021 feminizidmap.org received funding through the [Prototy
 
 ### We call it feminicide or femicide
 
-The choice of terms has generated a heated debate amongst theorists and activists in the Americas, and there is no consensus on the matter. We are a diverse team, and each of us has our own naming preferences as well as definitions. Therefore, we use femi(ni)cide as an abbreviation of femicide and feminicide, to build conversations and enable collaborations.
+The choice of terms has generated a heated debate amongst theorists and activists in the Americas, and there is no consensus on the matter. We are a diverse team, and each of us has our own naming preferences as well as definitions. Therefore, we use [femi(ni)cide](https://trivent-publishing.eu/img/cms/04-%20Aleida%20Luj%C3%A1n%20Pinelo.pdf) as an abbreviation of femicide and feminicide, to build conversations and enable collaborations.
 
 #### Definitions
 
