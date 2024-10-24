@@ -5,10 +5,15 @@
       {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
     </a>
   </div>
-  <h1 class="page-title">{{ .Page.Slug }}</h1>
+  <p class="page-title">
+      by  {{ .Params.author }}<br>
+      Published {{ .PublishDate.Format "Jan. 2, 2006" }}<br>
+      {{ if isset .Params "Lastmod" }}
+      Last updated: {{ .Lastmod.Format "Jan 2, 2006" }}
+      {{ end }}
+  </p>
 </header>
-<main class="page-main">
-  <h2>{{ .Title }}</h2>
+<main class="page-main format-blog">
   {{ .Content }}
 </main>
 {{ end }}
