@@ -1,6 +1,4 @@
 ---
-title: A blog
+title: blog
 slug: blog
 ---
-
-Hello

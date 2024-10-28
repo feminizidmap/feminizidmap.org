@@ -6,10 +6,18 @@
     </a>
   </div>
   <p class="page-title">
-      by  {{ .Params.author }}<br>
-      Published {{ .PublishDate.Format "Jan. 2, 2006" }}<br>
+      {{ T "blog_pub_author_by" }}  {{ .Params.author }}<br>
+      {{ T "blog_pub_date" }} {{ .PublishDate.Format "Jan. 2, 2006" }}<br>
       {{ if isset .Params "Lastmod" }}
-      Last updated: {{ .Lastmod.Format "Jan 2, 2006" }}
+      {{ T "blog_pub_edited" }}: {{ .Lastmod.Format "Jan 2, 2006" }}
+      {{ end }}
+
+      {{ if isset .Params "en_version" }}
+      <a href="{{ .Params.en_version }}">English version available</a>
+      {{ end }}
+
+      {{ if isset .Params "de_version" }}
+      <a href="{{ .Params.de_version }}">Deutsche Version verfügbar</a>
       {{ end }}
   </p>
 </header>

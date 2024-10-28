@@ -1,6 +1,4 @@
 ---
-title: Der blog
+title: Blog
 slug: blog
 ---
-
-Hallo blog

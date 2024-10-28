@@ -24,3 +24,9 @@
   translation: "Wenn ihr zur Dokumentation beitragen wollt, indem ihr uns einen Fall meldet, schreibt an unsere E-Mail-Adresse: "
 - id: footer_two
   translation: "Wenn ihr mit uns zusammenarbeiten und euch vernetzen wollt oder uns für andere Zwecke kontaktieren möchtet, könnt ihr dies über unsere E-Mail-Adresse tun: "
+- id: blog_pub_author_by
+  translation: "von"
+- id: blog_pub_date
+  translation: "Veröffentlicht"
+- id: blog_pub_edited
+  translation: "Letztes Update"
