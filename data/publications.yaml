@@ -5,12 +5,25 @@
   tags:
     - article
 
-- title: "Feminizidmap (2024). “Femizide in Deutschland: »Es wird oft auf Partnergewalt verengt«”. In: Junge Welt (2024-04-13) "
+- title: "Feminizidmap (2024). “Femizide in Deutschland: »Es wird oft auf Partnergewalt verengt«”. In: Junge Welt (2024-04-13)"
   project_related: true
   link: https://www.jungewelt.de/artikel/473234.femizide-in-deutschland-es-wird-oft-auf-partnergewalt-verengt.html
   link_name: "Read the interview"
   tags:
     - interview
+
+- title: "Collectif Féminicides Par Compagnons ou Ex, Feminizidmap, Kathomi Gatwiri, Savia Hasanova, Anna Kapushenko, Lyubava Malysheva, Saide Mobayed Vega, Audrey Mugeni, Rosalind Page, Ivonne Ramírez, Helena Suárez Val, Dawn Wilcox, and Aimee Zambrano Ortiz. “Feminicide Data Activism.” In The Routledge International Handbook on Femicide and Feminicide, edited by Myrna Dawson and Saide Mobayed Vega. New York: Routledge, 2023"
+  project_related: true
+  link: https://doi.org/10.4324/9781003202332-13
+  link_name: "Go to chapter"
+  tags:
+    - book chapter
+
+- title: "Luján Pinelo, Aleida. “Extreme Forms of Violence against Women in Europe. Femi(ni)cide in Germany.” Turun yliopisto [University of Turku], University of Turku, 2023."
+  project_related: false
+  link: https://urn.fi/URN:ISBN:978-951-29-9214-0
+  tags:
+    - thesis
 
 - title: "Luján Pinelo, A. (2022). On Extreme Forms of Violence Against Women in Europe: Does Femi(ni)cide Exist in Germany?. In: Davinić, M., Kostić, S. (eds) Gender Competent Public Law and Policies. Gender Perspectives in Law, vol 2. Springer, Cham."
   project_related: false
