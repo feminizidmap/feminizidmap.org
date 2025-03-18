@@ -3,7 +3,6 @@ title: Kritische Anmerkungen zum Gesetzentwurf der CDU/CSU
 date: 2024-10-20
 author: Aleida Luján-Pinelo & Dr. Nora Reich
 slug: kritische-anmerkungen-gesetzentwurf
-en_version: /blog/2024/critical-comments-draft-bill
 ---
 
 # Kritische Anmerkungen zum Gesetzentwurf der CDU/CSU: "Strafgesetzbuch und andere Gesetze - Verbesserung des Opferschutzes, insbesondere für Frauen und schutzbedürftige Personen"

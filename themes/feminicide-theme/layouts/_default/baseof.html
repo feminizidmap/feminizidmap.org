@@ -56,7 +56,7 @@
      */
     </script>
 
-    {{ $style := resources.Get "sass/site.scss" | resources.ToCSS }}
+    {{ $style := resources.Get "sass/site.scss" | css.Sass }}
     <link rel="stylesheet" href="{{$style.RelPermalink}}">
     <meta name="theme-color" content="#63125E">
     {{ block "head" . }}{{ end}}

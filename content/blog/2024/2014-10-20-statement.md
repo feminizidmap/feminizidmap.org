@@ -3,7 +3,6 @@ title:  Critical comments to the draft bill by CDU/CSU
 date: 2024-10-20
 author: Aleida Luján-Pinelo & Dr. Nora Reich
 slug: critical-comments-draft-bill
-de_version: /de/blog/2024/kritische-anmerkungen-gesetzentwurf
 ---
 
 # Critical comments to the draft bill by CDU/CSU: “Criminal Code and other laws - Improving victim protection, especially for women and vulnerable persons”

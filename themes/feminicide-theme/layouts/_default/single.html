@@ -12,7 +12,7 @@
       {{ T "blog_pub_edited" }}: {{ .Lastmod.Format "Jan 2, 2006" }}
       {{ end }}
 
-      {{ if isset .Params "en_version" }}
+      {{ if isset .Params "en_version"}}
       <a href="{{ .Params.en_version }}">English version available</a>
       {{ end }}
 

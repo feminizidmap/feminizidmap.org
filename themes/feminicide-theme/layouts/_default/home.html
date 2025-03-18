@@ -1,5 +1,5 @@
 {{  define "head"}}
-{{ $style := resources.Get "sass/home.scss" | resources.ToCSS }}
+{{ $style := resources.Get "sass/home.scss" | css.Sass }}
 <link rel="stylesheet" href="{{$style.RelPermalink}}">
 {{ end }}
 
