@@ -1,0 +1,33 @@
+{{ define "main" }}
+<header class="page-header">
+    <div class="page-logo">
+        <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
+            {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
+        </a>
+    </div>
+    <h1 class="page-title">{{ .Page.Slug }}</h1>
+</header>
+<main class="page-main">
+    <section>
+        <h2>{{ .Params.intro }}</h2>
+        {{ .Content }}
+        <ul class="pub-list">
+            {{ range $.Site.Data.events }}
+            {{ if eq .past false}}
+            {{ partial "event_item.html" . }}
+            {{ end }}
+            {{ end }}
+        </ul>
+    </section>
+    <section>
+        <h3>{{ .Params.events_past }}</h3>
+        <ul class="pub-list">
+            {{ range $.Site.Data.events }}
+            {{ if eq .past true}}
+            {{ partial "event_item.html" . }}
+            {{ end}}
+            {{ end }}
+        </ul>
+    </section>
+</main>
+{{ end }}

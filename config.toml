@@ -20,5 +20,6 @@ DefaultContentLanguage = "en"
     faq = "/faq"
     researchers = "/researchers"
     contributions = "/contributions"
+    events = "/events"
   [params.secondary]
     imprint = "/imprint"

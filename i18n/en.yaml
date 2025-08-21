@@ -30,3 +30,5 @@
   translation: "Published"
 - id: blog_pub_edited
   translation: "Last edited"
+- id: events_read_more_link
+  translation: "Go to event page"

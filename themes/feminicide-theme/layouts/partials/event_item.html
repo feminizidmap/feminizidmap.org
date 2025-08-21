@@ -1,0 +1,19 @@
+<li>
+    <article>
+        <p><strong>{{.event_title}}</strong></p>
+        <p>{{.date}} in {{.place}}</p>
+    </article>
+    <p>
+        <span>{{.title}}</span>
+        {{ range .tags }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+    </p>
+    {{ if .link }}
+    <p>
+        <a href="{{.link}}" rel="nofollow" target="_blank">
+            {{ T "events_read_more_link"}}
+        </a>
+    </p>{{ end }}
+
+</li>
