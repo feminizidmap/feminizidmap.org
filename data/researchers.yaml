@@ -88,3 +88,9 @@
   active: false
 - name: "Caroline"
   active: false
+- name: "Sinem Nazlı"
+  active: true
+  text_de: >-
+    Kriminalreporterin mit Schwerpunkt Frauen- und Kindernachrichten. Autorin des Buches „Ich kenne meinen Mörder“. Öffentliche Rednerin zum Thema „Gleichstellung der Geschlechter“.
+  text_en: >-
+    Crime reporter specializing in women's and children's news. Author of the book "I Know My Killer." Speaker on "Gender Equality."
