@@ -1,19 +1,22 @@
 <li>
-    <article>
-        <p><strong>{{.event_title}}</strong></p>
-        <p>{{.date}} in {{.place}}</p>
-    </article>
-    <p>
-        <span>{{.title}}</span>
-        {{ range .tags }}
-        <span class="tag">{{ . }}</span>
+    <article class="event-item">
+        <h3><strong>{{.event_title}}</strong>
+        </h3>
+        <p>{{.date}} in {{.place}} <span>{{.title}}</span>
+            {{ range .tags }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}</p>
+
+    <ul>
+        {{ range .sessions }}
+        <li class="">{{ . }}</li>
         {{ end }}
-    </p>
+    </ul>
     {{ if .link }}
     <p>
         <a href="{{.link}}" rel="nofollow" target="_blank">
             {{ T "events_read_more_link"}}
         </a>
     </p>{{ end }}
-
+    </article>
 </li>

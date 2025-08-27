@@ -1,6 +1,20 @@
 - event_title: "herCareer 2025"
-  session_title: "Feminizidmap - Monitoring Agency for Femi(ni)cides in Germany"
+  sessions:
+    - "Naming the Violence: Feminicide, Media, and the Politics of Visibility"
   link: "https://www.her-career.com/paussteller/feminizidmap-monitoring-agency-for-feminicides-in-germany-hercareer-2025/"
-  date: "10.10.2025"
+  date: "10. Oktober2025"
   place: "München"
+  tags:
+    - Ausstellung
+    - Konferenz
+  past: false
+- event_title: "Wenn Männer ihre Partnerinnen töten"
+  sessions:
+    - Datenlage zu Femi(ni)ziden in Deutschland - Vorstellung der Analyse für das Jahr 2023
+    - Der Begriff "Femi(ni)zid"
+  link: "https://www.akademie-bistum-aachen.de/bilden-begegnen/veranstaltungen/veranstaltung/Wenn-Maenner-ihre-Partnerinnen-toeten-2025.10.10/"
+  date: "10.-11. Oktober 2025"
+  place: "Aachen"
+  tags:
+    - Konferenz
   past: false

@@ -3,6 +3,7 @@ title: Fragen und Antworten
 slug: fragen
 navname: FAQ
 description: ""
+layout: page
 ---
 
 ### Warum machen wir dieses Projekt?

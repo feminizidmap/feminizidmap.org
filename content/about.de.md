@@ -3,6 +3,7 @@ title: Über das Projekt
 navname: Über
 slug: ueber
 description: ""
+layout: page
 ---
 
 Wir dokumentieren alle [Femi(ni)zide](#wir-sprechen-von-feminizid-oder-femizid) und Tötungsdelikte an Frauen* sowie Mädchen* in Deutschland. Der Begriff Femi(ni)zid bezieht sich auf Tötungen von Frauen* und Mädchen* durch Männer. Diese finden im Kontext hierarchischer Machtverhältnisse statt, in denen die getöteten Subjekte – Frauen*/Mädchen* – eine untergeordnete Position innerhalb der Machtstruktur einnehmen. Es geht nicht um eine Tötung nach Geschlecht, also eine rein oberflächliche terminologische Differenzierung zwischen Tötungen von Männern einerseits und Femi(ni)ziden an Frauen* andererseits. Weitere Informationen zu diesen Konzepten findest du hier.

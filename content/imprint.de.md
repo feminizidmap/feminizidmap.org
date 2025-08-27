@@ -2,6 +2,7 @@
 title: Impressum
 slug: impressum
 navname: Impressum
+layout: page
 ---
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 

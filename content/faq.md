@@ -3,6 +3,7 @@ title: Questions and answers
 slug: FAQ
 navname: FAQ
 description: What is Feminizidmap.org about?
+layout: page
 ---
 
 ### Why are you doing this project?

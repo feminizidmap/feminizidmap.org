@@ -1,0 +1,23 @@
+{{ define "main" }}
+<header class="page-header">
+    <div class="page-logo">
+        <a href="{{.Site.BaseURL}}" title="Feminizidmap.org" id="logo">
+            {{ readFile "themes/feminicide-theme/static/Feminizidmap-Logo-Black.svg" | safeHTML }}
+        </a>
+    </div>
+    <p class="page-title">
+        {{.Params.title}}
+
+        {{ if isset .Params "en_version"}}
+        <a href="{{ .Params.en_version }}">English version available</a>
+        {{ end }}
+
+        {{ if isset .Params "de_version" }}
+        <a href="{{ .Params.de_version }}">Deutsche Version verfügbar</a>
+        {{ end }}
+    </p>
+</header>
+<main class="page-main format-blog">
+    {{ .Content }}
+</main>
+{{ end }}

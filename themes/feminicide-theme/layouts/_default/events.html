@@ -11,7 +11,7 @@
     <section>
         <h2>{{ .Params.intro }}</h2>
         {{ .Content }}
-        <ul class="pub-list">
+        <ul class="event-list no-list">
             {{ range $.Site.Data.events }}
             {{ if eq .past false}}
             {{ partial "event_item.html" . }}
@@ -21,7 +21,7 @@
     </section>
     <section>
         <h3>{{ .Params.events_past }}</h3>
-        <ul class="pub-list">
+        <ul class="event-list">
             {{ range $.Site.Data.events }}
             {{ if eq .past true}}
             {{ partial "event_item.html" . }}
