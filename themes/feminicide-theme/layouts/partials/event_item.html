@@ -1,18 +1,24 @@
 <li>
     <article class="event-item">
-        <h3><strong>{{.event_title}}</strong>
+        <h3><strong>{{.context.event_title}}</strong>
         </h3>
-        <p>{{.date}} in {{.place}} <span>{{.title}}</span>
-            {{ range .tags }}
+        <p>{{.context.date}} in {{.context.place}} <span>{{.context.title}}</span>
+            {{ range .context.tags }}
             <span class="tag">{{ . }}</span>
             {{ end }}</p>
 
-    <ul>
-        {{ range .sessions }}
-        <li class="">{{ . }}</li>
-        {{ end }}
-    </ul>
-    {{ if .link }}
+        <ul>
+            {{ if eq .lang "en"}}
+            {{ range .context.en.sessions }}
+            <li class="">{{ . }}</li>
+            {{ end }}
+            {{ else }}
+            {{ range .context.de.sessions }}
+            <li class="">{{ . }}</li>
+            {{ end }}
+            {{ end }}
+        </ul>
+        {{ if .context.link }}
     <p>
         <a href="{{.link}}" rel="nofollow" target="_blank">
             {{ T "events_read_more_link"}}

@@ -1,6 +1,7 @@
 - event_title: "herCareer 2025"
-  sessions:
-    - "Naming the Violence: Feminicide, Media, and the Politics of Visibility"
+  de:
+    sessions:
+      - "Naming the Violence: Feminicide, Media, and the Politics of Visibility"
   link: "https://www.her-career.com/paussteller/feminizidmap-monitoring-agency-for-feminicides-in-germany-hercareer-2025/"
   date: "10. Oktober2025"
   place: "München"
@@ -9,12 +10,26 @@
     - Konferenz
   past: false
 - event_title: "Wenn Männer ihre Partnerinnen töten"
-  sessions:
-    - Datenlage zu Femi(ni)ziden in Deutschland - Vorstellung der Analyse für das Jahr 2023
-    - Der Begriff "Femi(ni)zid"
+  de:
+    sessions:
+      - Datenlage zu Femi(ni)ziden in Deutschland - Vorstellung der Analyse für das Jahr 2023
+      - Der Begriff "Femi(ni)zid"
   link: "https://www.akademie-bistum-aachen.de/bilden-begegnen/veranstaltungen/veranstaltung/Wenn-Maenner-ihre-Partnerinnen-toeten-2025.10.10/"
   date: "10.-11. Oktober 2025"
   place: "Aachen"
   tags:
     - Konferenz
   past: false
+- event_title: "Preisverleihung des Clara-Zetkin-Preises 2025"
+  de:
+    sessions:
+      - Feminizidmap wurde für den Clara-Zetkin-Preis 2025 nominiert und als eines von fünf Projekten von mehr als 100 Einsendungen geehrt. Den Preis erhielt Elizabeth Ngari für ihre Lebensleistung mit Women in Exile.
+  en:
+    sessions:
+      - Feminizidmap was nominated for Clara-Zetkin-Prize 2025 together with four other feminist projects out of more than 100 applications. The prize was given to Elizabeth Ngari for her initiative Women in Exile.
+  link: "https://www.die-linke.de/themen/feministische-politik/clara-zetkin-preis/clara-zetkin-preis-2025/"
+  date: "30. August 2025"
+  place: "Dortmund"
+  tags:
+    - Preisverleihung
+  past: true

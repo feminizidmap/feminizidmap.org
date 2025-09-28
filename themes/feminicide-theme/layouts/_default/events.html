@@ -10,21 +10,26 @@
 <main class="page-main">
     <section>
         <h2>{{ .Params.intro }}</h2>
+
+        {{ $lang := .Lang }}
+
+        {{.Lang}}
+
         {{ .Content }}
         <ul class="event-list no-list">
             {{ range $.Site.Data.events }}
             {{ if eq .past false}}
-            {{ partial "event_item.html" . }}
+            {{ partial "event_item.html" (dict "context" . "lang" $lang) }}
             {{ end }}
             {{ end }}
         </ul>
     </section>
     <section>
         <h3>{{ .Params.events_past }}</h3>
-        <ul class="event-list">
+        <ul class="event-list no-list">
             {{ range $.Site.Data.events }}
             {{ if eq .past true}}
-            {{ partial "event_item.html" . }}
+            {{ partial "event_item.html" (dict "context" . "lang" $lang) }}
             {{ end}}
             {{ end }}
         </ul>
