@@ -8,7 +8,7 @@
   tags:
     - Ausstellung
     - Konferenz
-  past: false
+  past: true
 - event_title: "Wenn Männer ihre Partnerinnen töten"
   de:
     sessions:
@@ -19,7 +19,7 @@
   place: "Aachen"
   tags:
     - Konferenz
-  past: false
+  past: true
 - event_title: "Preisverleihung des Clara-Zetkin-Preises 2025"
   de:
     sessions:
