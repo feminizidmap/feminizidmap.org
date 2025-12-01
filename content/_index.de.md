@@ -5,6 +5,10 @@ slug: projekt
 
 Wir dokumentieren alle von Männern ausgeübten Morde an Frauen* in Deutschland und wir entwickeln eine online Datenbank zu Femi(ni)ziden, Morden an Frauen* weil sie Frauen* sind.
 
-[Lies mehr über das Projekt und Definitionen von Femi(ni)zid](/de/ueber).
+[Mehr über das Projekt und Definitionen von Femi(ni)zid](/de/ueber)
 
-[Sieh dir unsere FAQ-Seite an](/de/fragen).
+[Unsere Bildungs- und Workshopangebote](/de/arbeit)
+
+[Eine Übersicht unserer Publikationen](/de/beitraege)
+
+[Unsere FAQ-Seite an](/de/fragen)

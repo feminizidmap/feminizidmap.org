@@ -54,10 +54,8 @@
     Teaching and doing research in gender studies, learning how to code out of fun, based in Berlin.
 - name: "Nadine"
   active: false
-  text_de: >-
-
-  text_en: >-
-
+  text_de: ""
+  text_en: ""
 - name: "Nora"
   active: true
   text_de: >-

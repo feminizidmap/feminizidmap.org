@@ -32,3 +32,5 @@
   translation: "Letztes Update"
 - id: events_read_more_link
   translation: "Zur Veranstaltungsseite"
+- id: events_no_future_events
+  translation: "Keine zukünftigen Veranstaltungen geplant"
