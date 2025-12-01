@@ -15,17 +15,22 @@
 
         {{ .Content }}
         <ul class="event-list no-list">
-            {{ range $.Site.Data.events }}
+            {{ $future := where $.Site.Data.events "past" false }}
+            {{ range $future}}
             {{ if eq .past false}}
             {{ partial "event_item.html" (dict "context" . "lang" $lang) }}
             {{ end }}
+            {{ else }}
+
+            <p>{{ T "events_no_future_events" }}</p>
             {{ end }}
         </ul>
     </section>
     <section>
         <h3>{{ .Params.events_past }}</h3>
         <ul class="event-list no-list">
-            {{ range $.Site.Data.events }}
+            {{ $past := where $.Site.Data.events "past" true }}
+            {{ range $past }}
             {{ if eq .past true}}
             {{ partial "event_item.html" (dict "context" . "lang" $lang) }}
             {{ end}}

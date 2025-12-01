@@ -21,7 +21,7 @@ Wir dokumentieren seit 2019 täglich Fälle von Tötungen von Frauen in Deutschl
 
 - Politische Beratung und Positionspapiere
 
-Beispiele für die Verwendung von Daten, Interviews und Positionspapieren finden Sie in [unserer Liste der Beiträge](/de/beitraege).
+Beispiele für die Verwendung von Daten, Interviews und Positionspapieren findet ihr in [unserer Liste der Beiträge](/de/beitraege).
 
 # Bildungsarbeit
 
@@ -35,4 +35,4 @@ Wir bieten Bildungsformate wie Workshops, Vorträge oder Podiumsbeiträge zu wic
 
 - Daten und Darstellung: Einblicke in Counter-Data-Praktiken und Datenaktivismus, Herausforderungen der Darstellung in offiziellen Daten, Neuauflage unserer Femizid-Daten.
 
-Auf [unserer Veranstaltungsseite](/de/veranstaltungen) finden Sie Veranstaltungen, an denen wir teilgenommen haben.
+Auf [unserer Veranstaltungsseite](/de/veranstaltungen) finden ihr Veranstaltungen, an denen wir teilgenommen haben.
