@@ -10,7 +10,7 @@ layout: page
 
 We are documenting cases of killings of women in Germany since 2019 with over 60 categories per case on a daily basis. On this basis we offer:
 
-- Detailed data on feminicides since 2019 in Germany
+- Detailed data on femi(ni)cides since 2019 in Germany
 
 - Guidance for researchers who would like to do research on feminicides and / or use our data
 
@@ -31,7 +31,7 @@ We offer educational formats such as workshops, talks or panel contributions on 
 
 - Global and interdisciplinary perspectives: Insights into Latin American movements on feminicides, areas of action, and interdisciplinary approaches.
 
-- Critical media analysis: Journalistic expertise on feminicide reporting, examining critical perspectives on media language and representations of feminicides in germany and Turkey.
+- Critical media analysis: Journalistic expertise on feminicide reporting, examining critical perspectives on media language and representations of feminicides in Germany and Turkey.
 
 - Data and representation: Insights into counter-data practices and data activism, challenges of representation in official data, resenting our feminicide data.
 
