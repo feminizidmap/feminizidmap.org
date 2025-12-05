@@ -7,7 +7,7 @@ Wir dokumentieren alle von Männern ausgeübten Morde an Frauen* in Deutschland 
 
 [Mehr über das Projekt und Definitionen von Femi(ni)zid](/de/ueber)
 
-[Unsere Bildungs- und Workshopangebote](/de/arbeit)
+[Unsere Bildungs- und Workshopangebote](/de/angebot)
 
 [Eine Übersicht unserer Publikationen](/de/beitraege)
 
