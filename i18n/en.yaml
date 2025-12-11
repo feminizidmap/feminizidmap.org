@@ -34,3 +34,15 @@
   translation: "Go to event page"
 - id: events_no_future_events
   translation: "No future events scheduled"
+- id: newsletter_title
+  translation: "Subscribe to our newsletter"
+- id: newsletter_text
+  translation: "You can subscribe to our bi-monthly newsletter with information on our data, insights into cases and updates on us as an organization."
+- id: newsletter_label_email
+  translation: "Email address"
+- id: newsletter_label_subscribe
+  translation: "Subscribe"
+- id: newsletter_thankyou
+  translation: "Thank you for your subscription!"
+- id: newsletter_plsconfirm
+  translation: "We have sent you an email - please confirm your email address by clicking the activation link in it."
