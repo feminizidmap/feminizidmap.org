@@ -5,10 +5,4 @@ slug: project
 
 We document all killings of women* by men in Germany and we develop an online database on femi(ni)cide, the killing of women* because they are women*.
 
-[About the project and the definitions of femi(ni)cides](/about)
-
-[Our educational- and workshop offers](/work)
-
-[An overview of our publications](/contributions)
-
-[Our FAQ page](/faq)
+[Download our report on the 2023 data]()

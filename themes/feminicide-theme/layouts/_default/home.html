@@ -12,7 +12,13 @@
   <h2 class="frontpage-title">{{ .Title }}</h2>
 </header>
 
-<div style="display: flex; justify-content: center;">
+<section class="c-section bg-white font-sans">
+    <div class="c-section__inner">
+        <div class="size-mid">{{ .Content }}</div>
+    </div>
+</section>
+
+<div style="display: flex; justify-content: center; overflow: hidden;">
   <iframe
     id="map"
     title="Feminizidmap Map"
@@ -20,9 +26,5 @@
   </iframe>
 </div>
 
-<section class="c-section bg-white font-sans">
-  <div class="c-section__inner">
-    <div class="size-mid">{{ .Content }}</div>
-  </div>
-</section>
+
 {{ end }}
