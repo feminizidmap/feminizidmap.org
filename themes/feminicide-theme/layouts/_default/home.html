@@ -11,9 +11,20 @@
 
   <h2 class="frontpage-title">{{ .Title }}</h2>
 </header>
+
 <section class="c-section bg-white font-sans">
-  <div class="c-section__inner">
-    <div class="size-mid">{{ .Content }}</div>
-  </div>
+    <div class="c-section__inner">
+        <div class="size-mid">{{ .Content }}</div>
+    </div>
 </section>
+
+<div class="iframe-container" style="display: flex; justify-content: center; overflow: hidden;">
+  <iframe
+    id="map"
+    title="Feminizidmap Map"
+    src="https://feminizidmap.netlify.app/map">
+  </iframe>
+</div>
+
+
 {{ end }}

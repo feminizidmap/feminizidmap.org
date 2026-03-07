@@ -20,6 +20,8 @@
   translation: "Mord ist Mord ist Mord"
 - id: home_murder_text
   translation: "Sed doloribus molestiae nulla quod porro molestiae. Expedita ullam quisquam saepe. At eius quis et corporis iste. Ut id consectetur rerum temporibus excepturi. Mollitia porro voluptatum non enim totam. Ipsa quam excepturi aliquam."
+- id: home_report_title
+  translation: "Unser Report 2023"
 - id: footer_one
   translation: "Wenn ihr zur Dokumentation beitragen wollt, indem ihr uns einen Fall meldet, schreibt an unsere E-Mail-Adresse: "
 - id: footer_two
