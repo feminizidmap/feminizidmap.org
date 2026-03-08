@@ -30,4 +30,20 @@ blockquote {
   margin: 0;
 }
 
+iframe {
+  border: none;
+  width: 100%;
+  //max-width: 1600px;
+  height: 800px;
+  overflow: hidden;
+}
+
 // resets ??
+.iframe-container {
+  overflow: hidden;
+  margin: 0 1rem 2rem 1rem;
+  @media screen and (min-width: $break-l) {
+    margin: 0 3rem 5rem 8rem;
+  }
+  
+}
