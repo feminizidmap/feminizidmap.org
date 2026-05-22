@@ -7,4 +7,6 @@ Wir dokumentieren alle Tötungen von Männern an Frauen* in Deutschland und wir 
 
 [Zur Pressemitteilung 8. März 2026](/press/PRESSEMITTEILUNG_Feminizidmap_8Maerz2026.pdf)
 
-[Download unseres Reports zu den 2023 Daten](/reports/Feminizidmap-Report-2023.pdf)
+[Download unseres Reports zu den 2023 Daten (Deutsch)](/reports/Feminizidmap-Report-2023.pdf)
+
+[Download unseres Reports zu den 2023 Daten (Englisch)](/reports/Feminizidmap-Report-2023-EN.pdf)
