@@ -1,3 +1,28 @@
+- event_title: "Feminizide. Eine interdisziplinäre Veranstaltungsreihe"
+  de:
+    sessions:
+      - "Vortragsreihe der Feminist Law Clinic und dem Fachschaftsrat Jura der HU Berlin"
+      - "Vortrag: “Femi(ni)zide: vom Mord zum politischen Versagen”"
+      - Paneldiskussion
+  link: "https://de.linkedin.com/posts/vorstand-feminizidmap_morgen-am-612026-startet-die-neue-interdisziplin%C3%A4re-activity-7414037614363688960-HY5X"
+  date: "6. Januar 2026"
+  place: "Berlin"
+  tags:
+    - Paneldiskussion
+    - Vortragsreihe
+  past: true
+
+- event_title: "Femizide und Filizide – ERKENNEN, BENENNEN, VERHINDERN. Impulse aus Recht, Politik und Praxis"
+  de:
+    sessions:
+      - "Organisiert vom Landesfrauenrat Sachsen an der Evangelischen Hochschule Dresden"
+      - Workshop
+  link: "https://landesfrauenrat-sachsen.de/veranstaltungen/fachtag-femizide-und-filizide-erkennen-benennen-verhindern-impulse-aus-recht-politik-und-praxis/"
+  date: "16. Oktober 2025"
+  place: "Dresden"
+  tags:
+    - Fachtagung
+  past: true
 - event_title: "herCareer 2025"
   de:
     sessions:

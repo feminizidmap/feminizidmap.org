@@ -18,9 +18,9 @@
             {{ end }}
             {{ end }}
         </ul>
-        {{ if .context.link }}
+        {{ with .context.link }}
     <p>
-        <a href="{{.link}}" rel="nofollow" target="_blank">
+        <a href="{{.}}" rel="nofollow" target="_blank">
             {{ T "events_read_more_link"}}
         </a>
     </p>{{ end }}
