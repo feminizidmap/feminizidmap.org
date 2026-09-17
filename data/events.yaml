@@ -1,3 +1,25 @@
+- event_title: "DACH Vernetzung gegen Feminizide"
+  de:
+    sessions:
+      - "Patriarchale Gewalt und rechte Narrative"
+  link: "https://www.instagram.com/sinemndemir/p/Dc6BgftAC_r/"
+  date: "20. September 2026"
+  place: "Kassel"
+  tags:
+    - Workshop
+  past: false
+
+- event_title: "Runder Tisch gegen häusliche Gewalt im Rhein-Sieg-Kreis"
+  de:
+    sessions:
+      - "Vortrag zu Erkenntnissen zu Femi(ni)ziden aus der Feminizidmap-Datenbank und Implikationen für die Prävention"
+  link: "https://www.runder-tisch-gegen-haeusliche-gewalt-rsk.de/termine/"
+  date: "29. September 2026"
+  place: "Siegburg"
+  tags:
+    - Vortrag
+  past: false
+
 - event_title: "Feminizide. Eine interdisziplinäre Veranstaltungsreihe"
   de:
     sessions:
