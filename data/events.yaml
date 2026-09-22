@@ -7,6 +7,14 @@
   place: "Kassel"
   tags:
     - Workshop
+  past: true
+
+- event_title: 'Zuhause-Filmfestivals - "Was an Empfindsamkeit bleibt"'
+  link: "https://zuhausefilmfestival.de/programm-2026/"
+  date: "25. September 2026"
+  place: "Bernau bei Berlin"
+  tags:
+    - Film+Diskussion
   past: false
 
 - event_title: "Runder Tisch gegen häusliche Gewalt im Rhein-Sieg-Kreis"
@@ -16,6 +24,17 @@
   link: "https://www.runder-tisch-gegen-haeusliche-gewalt-rsk.de/termine/"
   date: "29. September 2026"
   place: "Siegburg"
+  tags:
+    - Vortrag
+  past: false
+
+- event_title: "Vorstellung des neuen Feminizidmap-Jahresreports"
+  de:
+    sessions:
+      - "Mehr Informationen in Kürze."
+  #link: "https://www.runder-tisch-gegen-haeusliche-gewalt-rsk.de/termine/"
+  date: "27. November 2026"
+  place: "Berlin"
   tags:
     - Vortrag
   past: false
